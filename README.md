@@ -1,7 +1,8 @@
 <div align ="center"> 
 <h1>🔥 INBTI 🔥<br>
 <hr>
-인천전자마이스터고 3학년 통신 1반 1조 MDP 프로젝트
+인천전자마이스터고 3학년 통신 1반 1조<br>
+MDP 프로젝트
 <hr>
 <div align="center">
 👨‍🎓Members👩‍🎓<br/>
