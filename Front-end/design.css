@@ -5,3 +5,17 @@ body{
     width: 100%;
     text-align: center;
 }
+.menu{
+    width: 100%;
+    text-align: center;
+}
+.item{
+    margin: 50px;
+    text-decoration: none;
+    font-size: 500px;
+    padding: 5px;
+    border: 2px solid;
+    color: black;
+    position: relative;
+    left: 250px;
+}
