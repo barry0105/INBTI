@@ -3,7 +3,7 @@ MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 
 ㆍ 간단한 설문조사를 통해서 본인과 맞는 유형 제공<br>
 ㆍ 나에게 맞는 맞춤형 직무와, 분야, 직장까지 추천<br>
-<h3>👤 Members 👤</h3>
+<h3>Members 👤</h3>
 
 | 학번 | 이름 | 역할 |
 | ------- | ------- | ------- |
@@ -14,7 +14,7 @@ MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 | - | 채광원 선생님 | 관리 |
 <div/>
 <hr>
-<h3>🛠️ Tech Stack 🛠️<h3>
+<h3>Tech Stack 🛠️<h3>
 <a href="https://namu.wiki/w/JavaScript"><img src="https://img.shields.io/badge/JavaScript-black?style=flat&logo=JavaScript&logoColor=F7DF1E"/></a>
 <a href="https://namu.wiki/w/Python"><img src="https://img.shields.io/badge/Python-black?style=flat&logo=Python&logoColor=3776AB"/></a>
 <a href="https://namu.wiki/w/HTML"><img src="https://img.shields.io/badge/HTML5-black?style=flat&logo=HTML5&logoColor=E34F26"/> </a>
