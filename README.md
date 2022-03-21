@@ -7,4 +7,4 @@
 방주현<br/>
 전해린<br/>
 <hr/>
-사용 언어 : 
+사용 언어 : <img src=""https://img.shields.io/badge/Scss-green?style=flat&logo=Sass&logoColor=CC6699"/>
