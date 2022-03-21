@@ -1,8 +1,10 @@
 # 🔥 INBTI 🔥
 인천전자마이스터고 3학년 통신 1반 1조 MDP 프로젝트
 <hr>
+<div align="center">
 ❤️Members❤️<br/>
 김규진 김채은 방주현 전해린
+<div/>
 <hr>
 <div align="center">
 <a href="https://namu.wiki/w/JavaScript"><img src="https://img.shields.io/badge/JavaScript-black?style=flat&logo=JavaScript&logoColor=F7DF1E"/></a>
