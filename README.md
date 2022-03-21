@@ -1,4 +1,6 @@
 # **INBTI 📑**<br> 3학년 통신 1반 1조<br>
+<img width="80%" src="https://postfiles.pstatic.net/MjAyMjAzMjFfNTAg/MDAxNjQ3ODQyODQwNTA4.WEqIpJnmQp9MBs_s04oNDFKVHGuwAU3NswbRUWzxRlMg.gQWOEC_LzBIwkWgV7pjDuVFt9dASgIUnC56EpbYLseog.PNG.soundzrin/INBTI_LOGO.png?type=w773"/>
+
 MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 
 ㆍ 간단한 설문조사를 통해서 본인과 맞는 유형 제공<br>
