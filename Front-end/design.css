@@ -5,17 +5,12 @@ body{
     width: 100%;
     text-align: center;
 }
-.menu{
-    width: 100%;
-    text-align: center;
+.logo{
+    max-width: 50%;
+    height: auto;
 }
-.item{
-    margin: 50px;
-    text-decoration: none;
-    font-size: 500px;
-    padding: 5px;
-    border: 2px solid;
-    color: black;
-    position: relative;
-    left: 250px;
+.question_chunk{
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
