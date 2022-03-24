@@ -1,6 +1,6 @@
 @font-face {
     font-family: "main_font";
-    src: url("./fonts/main_font.ttf");
+    src: url("./survey/fonts/main_font.ttf");
 }
 body{
     background-color: pink;
@@ -29,7 +29,7 @@ body{
     font-size: 1rem;
 }
 
-.button_main > input[type="button"]{
+#to_board{
     font-family: "main_font";
     margin: 0 auto;
     background-color: palevioletred;
@@ -40,11 +40,26 @@ body{
     border-radius: 5%;
     border: 0;
 }
-
-.button_main > input[type="button"]:hover{
+#to_question{
+    font-family: "main_font";
+    margin: 0 auto;
+    background-color: palevioletred;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 5%;
+    border: 0;
+}
+#to_board{
     background-color: rgb(194, 62, 106);
     cursor: pointer;
 }
+#to_question{
+    background-color: rgb(194, 62, 106);
+    cursor: pointer;
+}
+    
 #question{
     display: none;
 }
