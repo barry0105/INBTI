@@ -22,4 +22,5 @@ bt_to_main.addEventListener("click", function(){
     main_display.style.display = "block";
     board_display.style.display = "none";
     question_display.style.display = "none";
+    bt_to_main.style.display = "none";
 })

@@ -24,7 +24,6 @@ body{
     margin: 0 auto;
     max-width: 60%;
     max-height: 50%;
-    border: 1px solid red;
 }
 #text_main{
     font-size: 1rem;
