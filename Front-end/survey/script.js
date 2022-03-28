@@ -245,7 +245,6 @@ jQuery('.mm-prev-btn').hide();
 	function collectData() {
 		
 		var map = {};
-		var ax = ['0','red','mercedes','3.14','3'];
 		var answer = '';
 		var total = 0;
 		var ttl = 0;
@@ -257,44 +256,37 @@ jQuery('.mm-prev-btn').hide();
 			var data;
 			var name;
 			var n;
-
 			item = jQuery(this);
 			data = item.val();
 			name = item.data('item');
 			n = parseInt(data);
-			total += n;
-
-			map[name] = data;
-
-		});
-
-		jQuery('.mm-survey-results-container .mm-survey-results-list').html('');
-
-		/*for (i = 1; i <= count; i++) { 채점 화면
-
-			var t = {};
-			var m = {};
-			answer += map[i] + '<br>';
 			
-			if( map[i] === ax[i]) {
-				g = map[i];
-				p = 'correct';
-				c = 1;
-			}
-			else {
-				g = map[i];
-				p = 'incorrect';
-				c = 0;
-			}
+			total += n;
+		});
+		
+		if(total >= 10 && total < 20){
+			jQuery('.mm-survey-results-score').html("10~20 사이인데용? || "+total);
+		}
+		else if(total >= 20 && total < 30){
+			jQuery('.mm-survey-results-score').html("20~30 사이인데용? || "+total);
+		}
+		else if(total >= 30 && total < 40){
+			jQuery('.mm-survey-results-score').html("30~40 사이인데용? || "+total);
+		}
+		else if(total >= 40 && total < 50){
+			jQuery('.mm-survey-results-score').html("40~50 사이인데용? || "+total);
+		}
+		else if(total >= 50 && total < 60){
+			jQuery('.mm-survey-results-score').html("50~60 사이인데용? || "+total);
+		}
+		else if(total >= 60 && total < 70){
+			jQuery('.mm-survey-results-score').html("60~70 사이인데용? || "+total);
+		}
+		else if(total >= 70 && total < 80){
+			jQuery('.mm-survey-results-score').html("70~80 사이인데용? || "+total);
+		}
+		
 
-			jQuery('.mm-survey-results-list').append('<li class="mm-survey-results-item '+p+'"><span class="mm-item-number">'+i+'</span><span class="mm-item-info">'+g+' - '+p+'</span></li>');
-
-			m[i] = c;
-			ttl += m[i];
-
-		}*/
-
-		jQuery('.mm-survey-results-score').html('결과창'); //결과화면
 
 	}
 
