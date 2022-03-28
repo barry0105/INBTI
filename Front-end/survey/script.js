@@ -251,8 +251,8 @@ jQuery('.mm-prev-btn').hide();
 		var g;
 		var c = 0;
 		var result_matching = [20,30,40,50,60,70];
-		var comment_result = ["20~25 사인데용?","30~35 사인데용?","40~45 사인데용?","50~55 사인데용?","60~65 사인데용?","70~75 사인데용?"];
-		var comment_result_half = ["25~30 사인데용?","35~40 사인데용?","45~50 사인데용?","55~60 사인데용?","65~70 사인데용?","75~80 사인데용?"];
+		var comment_result = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/20~25.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/30~35.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/40~45.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/50~55.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/60~65.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/70~75.png?raw=true"];
+		var comment_result_half = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/25~30.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/35~40.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/45~50.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/55~60.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/65~70.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/75~80.png?raw=true"];
 		jQuery('.mm-survey-item input:checked').each(function(index, val) {
 			var item;
 			var data;
@@ -267,10 +267,10 @@ jQuery('.mm-prev-btn').hide();
 		});
 		for(let i=0;i<result_matching.length;i++){
 			if(total >= result_matching[i] && total < result_matching[i]+5){
-				jQuery('.mm-survey-results-score').html("<br>"+comment_result[i]+"<br> Total : "+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>Total : '+total);
 			}
 			else if((total >= result_matching[i]+5 && total < result_matching[i]+10) || total == 80){
-				jQuery('.mm-survey-results-score').html("<br>"+comment_result_half[i]+"<br> Total : "+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>Total : '+total);
 			}
 
 		}
