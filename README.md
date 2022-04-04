@@ -1,7 +1,5 @@
 # **INBTI 📑**<br> 3학년 통신 1반 1조<br>
-<p align="center">
 <img width="50%" src="https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/LOGO.png?raw=true"/>
- </p>
 
 MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 
