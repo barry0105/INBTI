@@ -279,7 +279,6 @@ jQuery('.mm-prev-btn').hide();
 
 	function goBack() {
 		jQuery('.mm-back-btn').on('click', function() {
-			jQuery('.mm-survey-bottom').slideDown();
-			jQuery('.mm-survey-results').slideUp();
+			location.href = '../index.html';
 		});
 	}
