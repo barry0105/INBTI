@@ -3,7 +3,7 @@
     src: url("./survey/fonts/main_font.ttf");
 }
 body{
-    background-color: pink;
+    background-color: rgb(255,255,145);
     
 }
 #main{
@@ -22,8 +22,8 @@ body{
 }
 .main_pic{
     margin: 0 auto;
-    max-width: 60%;
-    max-height: 50%;
+    max-width: 40%;
+    max-height: 40%;
 }
 #text_main{
     font-size: 1rem;
@@ -32,9 +32,9 @@ body{
 #to_board{
     font-family: "main_font";
     margin: 0 auto;
-    background-color: palevioletred;
-    width: 200px;
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0,);
+    width: 250px;
+    height: 180px;
     margin: 10px;
     font-size: 30px;
     border-radius: 5%;
@@ -43,20 +43,20 @@ body{
 #to_question{
     font-family: "main_font";
     margin: 0 auto;
-    background-color: palevioletred;
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
-    height: 80px;
+    height: 230px;
     margin: 10px;
     font-size: 30px;
     border-radius: 5%;
     border: 0;
 }
 #to_board{
-    background-color: rgb(194, 62, 106);
+    background-color: rgba(194, 62, 106, 0);
     cursor: pointer;
 }
 #to_question{
-    background-color: rgb(194, 62, 106);
+    background-color: rgb(194, 62, 106, 0);
     cursor: pointer;
 }
     
