@@ -245,7 +245,7 @@ jQuery('.mm-prev-btn').hide();
 	function collectData() {
 		
 		var map = {};
-		var answer = '';
+		var answer = ["최전선에서 일하는 블루 칼라","아직 더 배우고 싶은 대학 진학","꿈의 공기업","최고의 대기업","뭐든지 할 수 있는 만능","와이파이 만드는 그거요? 네트워크","이거 없이 기계를 만들 수 있나? 펌웨어 개발","무에서 유를 창조하는 S/W 개발","1에서 100을 만드는 H/W 개발","군인 아닌데요! 군무원","흔들리지 않는 편안함 공무원","새로운 길을 열어라! 스타트업","아직 젊다! 다른 진로를 찾아보자"];
 		var total = 0;
 		var ttl = 0;
 		var g;
@@ -267,12 +267,11 @@ jQuery('.mm-prev-btn').hide();
 		});
 		for(let i=0;i<result_matching.length;i++){
 			if(total >= result_matching[i] && total < result_matching[i]+5){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>Total : '+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>');
 			}
 			else if((total >= result_matching[i]+5 && total < result_matching[i]+10) || total == 80){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>Total : '+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>');
 			}
-
 		}
 		
 	}
