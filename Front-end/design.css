@@ -3,27 +3,17 @@
     src: url("./survey/fonts/main_font.ttf");
 }
 body{
-    background-color: rgb(255,255,145);
-    
+    background-color: rgb(255, 255, 255);   
 }
-#main{
-    margin: 0 auto;
-    text-align: center;
-    min-width: 60%;
-    max-width: 60%;
-    max-height: auto;
-    background-color: white;
-    border-radius: 8%;
-    padding-bottom: 5%;
-}
+
 .logo{
-    max-width: 40%;
-    background-color: white;
+    max-width: 20%;
+    margin: 0 auto;
 }
 .main_pic{
     margin: 0 auto;
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 30%;
+    max-height: 30%;
 }
 #text_main{
     font-size: 1rem;
@@ -32,7 +22,7 @@ body{
 #to_board{
     font-family: "main_font";
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0,);
+    background-color: rgba(216, 112, 147, 0);
     width: 250px;
     height: 180px;
     margin: 10px;
@@ -43,7 +33,7 @@ body{
 #to_question{
     font-family: "main_font";
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(216, 112, 147, 0);
     width: 200px;
     height: 230px;
     margin: 10px;
@@ -56,7 +46,7 @@ body{
     cursor: pointer;
 }
 #to_question{
-    background-color: rgb(194, 62, 106, 0);
+    background-color: rgba(194, 62, 106, 0);
     cursor: pointer;
 }
     
@@ -68,4 +58,18 @@ body{
 }
 #backtomain{
     display: none;
+}
+#left_side{
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    float: left;
+}
+#right_side{
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    float: right;
 }

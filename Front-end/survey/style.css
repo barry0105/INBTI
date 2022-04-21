@@ -42,12 +42,12 @@
     height: 60px;
     background: #333;
     padding: 12px 14px;
-	text-align: center;
 }
 
 .mm-back-btn {
 	display: inline-block;
     position: relative;
+    float: left;
 }
 
 .mm-prev-btn {
@@ -126,7 +126,6 @@
 	width: 100%;
 	padding: 10px 10px;
 	margin: 0px !important;
-	border: 1px solid grey;
 }
 
 .mm-survery-content label:hover {
