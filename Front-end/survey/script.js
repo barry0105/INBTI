@@ -34,7 +34,6 @@ jQuery('.mm-prev-btn').hide();
 		});
 
 	}
-
 	function getCount() {
 
 		count = jQuery('.mm-survey-page').length;
