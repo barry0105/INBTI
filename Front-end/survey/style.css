@@ -2,6 +2,9 @@
 	font-family: "main_font";
 	src: url("./fonts/main_font.ttf");
 }
+body{
+	background: #f8edeb;
+}
 .mm-survey {
 	margin-top: 75px;
 	margin-bottom: 50px;
@@ -10,13 +13,13 @@
 .mm-survey-container {
 	width: 100%;
 	min-height: 100%;
-	background: #fafafa;
+	background: #ffd7ba;
 }
 
 .mm-survey-results-container {
 	width: 100%;
 	min-height: 600px;
-	background: #fafafa;
+	background: #fff;
 }
 
 .mm-survey-page {
