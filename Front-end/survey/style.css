@@ -94,6 +94,16 @@ body{
     font-family: 'snByulByul';
     font-weight: 300;
 	border-radius: 5%;
+	cursor: url("../Picture/cursor_click.png"), auto;
+}
+.mm-survey-controller button:disabled {
+	background: #fff;
+    border: none;
+    padding: 8px 18px;
+    font-family: 'snByulByul';
+    font-weight: 300;
+	border-radius: 5%;
+	cursor: url("../Picture/cursor_normalsmall.png"), auto;
 }
 
 .mm-survey-results-controller button {
@@ -147,7 +157,7 @@ body{
 	top: -1%;
 }
 .mm-survery-content label:hover {
-	cursor: pointer;
+	cursor: url('../Picture/cursor_click.png'), auto;
 }
 
 .mm-survey-question {
@@ -186,7 +196,7 @@ input[type="radio"] + label span {
 	height: 30px;
 	margin: 2px 4px 0 0;
 	vertical-align: middle;
-	cursor: pointer;
+	cursor: url('../Picture/cursor_click.png'), auto;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
@@ -227,6 +237,9 @@ input[type="radio"]:checked + label span {
 
 .mm-finish-btn.active {
 	display: inline-block;
+}
+.mm-finish-btn:hover{
+	cursor: url("../Picture/cursor_normalsmall.png"), auto;
 }
 
 .mm-survey-results {
