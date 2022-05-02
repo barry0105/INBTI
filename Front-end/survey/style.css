@@ -24,7 +24,6 @@ body{
 	min-height: 100%;
 	background: #FFF6E7;
 }
-
 .mm-survey-results-container {
 	width: 100%;
 	min-height: 600px;
@@ -47,6 +46,7 @@ body{
     height: 60px;
     background: #D9D9D9;
     padding: 12px 14px;
+	border-radius: 5%;
 }
 
 .mm-survey-results-controller {
@@ -65,7 +65,7 @@ body{
 .mm-prev-btn {
 	display: inline-block;
     position: relative;
-    float: left;
+	float: left;
 }
 
 .mm-next-btn {
@@ -92,6 +92,7 @@ body{
     padding: 8px 18px;
     font-family: 'snByulByul';
     font-weight: 300;
+	border-radius: 5%;
 }
 
 .mm-survey-results-controller button {
@@ -210,6 +211,7 @@ input[type="radio"]:checked + label span {
 .mm-survey-item {
 	background: #E2F0D9;
 	margin-bottom: 15px;
+	border-radius: 5%;
 }
 
 .mm-prev-btn button:focus, .mm-next-btn button:focus, .mm-finish-btn button:focus {
