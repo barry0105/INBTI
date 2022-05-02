@@ -10,6 +10,7 @@
 }
 body{
 	background: #FFF3FF;
+	cursor: url("../Picture/cursor_normalsmall.png"), auto;
 }
 .mm-survey {
 	margin-top: 75px;
