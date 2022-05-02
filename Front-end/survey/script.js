@@ -238,6 +238,8 @@ jQuery('.mm-prev-btn').hide();
 			collectData();
 			jQuery('.mm-survey-bottom').slideUp();
 			jQuery('.mm-survey-results').slideDown();
+			jQuery('.logo-main').hide();
+			jQuery('.mm-survey-progress').hide();
 		});
 	}
 
@@ -274,11 +276,4 @@ jQuery('.mm-prev-btn').hide();
 
 		}
 		
-	}
-
-	function goBack() {
-		jQuery('.mm-back-btn').on('click', function() {
-			jQuery('.mm-survey-bottom').slideDown();
-			jQuery('.mm-survey-results').slideUp();
-		});
 	}

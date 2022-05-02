@@ -55,14 +55,21 @@ body{
     height: 60px;
     background: #333;
     padding: 12px 14px;
+	text-align: center;
 }
 
-.mm-back-btn {
+.mm-back-btn button{
 	display: inline-block;
     position: relative;
-    float: left;
+	font-size: 130%;
+	width: 20%;
+	font-family: 'main_font';
+	color:#333;
+	border-radius: 5%;
 }
-
+.mm-back-btn button:hover{
+	cursor: url("../Picture/cursor_click.png"), auto;
+}
 .mm-prev-btn {
 	display: inline-block;
     position: relative;

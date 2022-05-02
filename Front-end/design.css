@@ -4,7 +4,8 @@
     font-size: larger;
 }
 body{
-    background-color: rgb(255, 255, 255);   
+    background-color: rgb(255, 255, 255);
+    cursor: url("Picture/cursor_normalsmall.png"), auto;
 }
 
 .logo{
@@ -15,6 +16,9 @@ body{
     margin: 0 auto;
     max-width: 30%;
     max-height: 30%;
+}
+.logo:hover{
+    cursor: url("Picture/cursor_click.png"), auto;
 }
 #text_main{
     font-size: 1rem;
@@ -30,6 +34,9 @@ body{
     border-radius: 5%;
     border: 0;
 }
+#to_board:hover{
+    cursor: url("Picture/cursor_click.png"), auto;
+}
 #to_question{
     margin: 0 auto;
     background-color: rgba(216, 112, 147, 0);
@@ -40,15 +47,9 @@ body{
     border-radius: 5%;
     border: 0;
 }
-#to_board{
-    background-color: rgba(194, 62, 106, 0);
-    cursor: pointer;
-}
-#to_question{
-    background-color: rgba(194, 62, 106, 0);
-    cursor: pointer;
-}
-    
+#to_question:hover{
+    cursor: url("Picture/cursor_click.png"), auto;
+}   
 #question{
     display: none;
 }
@@ -65,10 +66,16 @@ body{
     background-color: white;
     float: left;
 }
+#left_side:hover{
+    cursor: url("Picture/cursor_click.png"), auto;
+}
 #right_side{
     margin: 10px;
     width: 200px;
     height: 500px;
     background-color: white;
     float: right;
+}
+#right_side:hover{
+    cursor: url("Picture/cursor_click.png"), auto;
 }
