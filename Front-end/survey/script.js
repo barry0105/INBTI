@@ -17,8 +17,6 @@ jQuery('.mm-prev-btn').hide();
 	deliverStatus();
 	submitData();
 	goBack();
-	
-	
 
 	function init() {
 		

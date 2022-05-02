@@ -1,519 +1,761 @@
 <!DOCTYPE html>
-<html lang="ko" >
-<head>
-  <meta charset="UTF-8">
-  <title>설문조사</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../Picture/title.ico"/>
-  <link rel="shortcut icon" href="../Picture/title.ico"/>
-</head>
-<body>
-<div class="logo-main-form">
-	<img class="logo-main" src="../Picture/LOGO.png" width=200px/>
-</div>
-<div class="container">
-		<div class="col-sm-12">
-			<div class="mm-survey">
-				<div class="mm-survey-progress">
-					<div class="mm-survey-progress-bar mm-progress">
-						<img id="progress-bar" src="../Picture/main.png" width="30px">
-					</div>
-				</div>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>설문조사</title>
+        <link
+            rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="../Picture/title.ico"/>
+        <link rel="shortcut icon" href="../Picture/title.ico"/>
+    </head>
+    <body>
+        <div class="logo-main-form">
+            <img class="logo-main" src="../Picture/LOGO.png" width="200px"/>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="mm-survey">
+                    <div class="mm-survey-progress">
+                        <div class="mm-survey-progress-bar mm-progress">
+                            <img id="progress-bar" src="../Picture/main.png" width="30px">
+                        </div>
+                    </div>
 
-				<div class="mm-survey-results">
-					<div class="mm-survey-results-container">
-						<h3 class="mm-survey-results-score"></h3>
-						<ul class="mm-survey-results-list"></ul>
-					</div>
-					<div class="mm-survey-results-controller">
-						<div class="mm-back-btn">
-							<button>Back</button>
-						</div>
-					</div>
-				</div>
+                    <div class="mm-survey-results">
+                        <div class="mm-survey-results-container">
+                            <h3 class="mm-survey-results-score"></h3>
+                            <ul class="mm-survey-results-list"></ul>
+                        </div>
+                        <div class="mm-survey-results-controller">
+                            <div class="mm-back-btn">
+                                <button>Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mm-survey-bottom">
+                        <div class="mm-survey-container">
+                            <div class="mm-survey-page active" data-page="1">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 1</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio01" data-item="1" name="radio1" value="1"/>
+                                        <label for="radio01">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio02" data-item="1" name="radio1" value="2"/>
+                                        <label for="radio02">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio03" data-item="1" name="radio1" value="3"/>
+                                        <label for="radio03">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio04" data-item="1" name="radio1" value="4"/>
+                                        <label for="radio04">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="2">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 2</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio05" data-item="2" name="radio2" value="1"/>
+                                        <label for="radio05">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio06" data-item="2" name="radio2" value="2"/>
+                                        <label for="radio06">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio07" data-item="2" name="radio2" value="3"/>
+                                        <label for="radio07">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio08" data-item="2" name="radio2" value="4"/>
+                                        <label for="radio08">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="3">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 3</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio09" data-item="3" name="radio3" value="1"/>
+                                        <label for="radio09">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio10" data-item="3" name="radio3" value="2"/>
+                                        <label for="radio10">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio11" data-item="3" name="radio3" value="3"/>
+                                        <label for="radio11">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio12" data-item="3" name="radio3" value="4"/>
+                                        <label for="radio12">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="4">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 4</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio13" data-item="4" name="radio4" value="1"/>
+                                        <label for="radio13">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio14" data-item="4" name="radio4" value="2"/>
+                                        <label for="radio14">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio15" data-item="4" name="radio4" value="3"/>
+                                        <label for="radio15">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio16" data-item="4" name="radio4" value="4"/>
+                                        <label for="radio16">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="5">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 5</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio17" data-item="5" name="radio5" value="1"/>
+                                        <label for="radio17">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio18" data-item="5" name="radio5" value="2"/>
+                                        <label for="radio18">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio19" data-item="5" name="radio5" value="3"/>
+                                        <label for="radio19">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio20" data-item="5" name="radio5" value="4"/>
+                                        <label for="radio20">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="6">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 6</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio21" data-item="6" name="radio6" value="1"/>
+                                        <label for="radio21">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio22" data-item="6" name="radio6" value="2"/>
+                                        <label for="radio22">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio23" data-item="6" name="radio6" value="3"/>
+                                        <label for="radio23">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio24" data-item="6" name="radio6" value="4"/>
+                                        <label for="radio24">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="7">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 7</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio25" data-item="7" name="radio7" value="1"/>
+                                        <label for="radio25">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio26" data-item="7" name="radio7" value="2"/>
+                                        <label for="radio26">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio27" data-item="7" name="radio7" value="3"/>
+                                        <label for="radio27">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio28" data-item="7" name="radio7" value="4"/>
+                                        <label for="radio28">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="8">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 8</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio29" data-item="8" name="radio8" value="1"/>
+                                        <label for="radio29">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio30" data-item="8" name="radio8" value="2"/>
+                                        <label for="radio30">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio31" data-item="8" name="radio8" value="3"/>
+                                        <label for="radio31">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio32" data-item="8" name="radio8" value="4"/>
+                                        <label for="radio32">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="9">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 9</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio33" data-item="9" name="radio9" value="1"/>
+                                        <label for="radio33">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio34" data-item="9" name="radio9" value="2"/>
+                                        <label for="radio34">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio35" data-item="9" name="radio9" value="3"/>
+                                        <label for="radio35">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio36" data-item="9" name="radio9" value="4"/>
+                                        <label for="radio36">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="10">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 10</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio37" data-item="10" name="radio10" value="1"/>
+                                        <label for="radio37">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio38" data-item="10" name="radio10" value="2"/>
+                                        <label for="radio38">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio39" data-item="10" name="radio10" value="3"/>
+                                        <label for="radio39">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio40" data-item="10" name="radio10" value="4"/>
+                                        <label for="radio40">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="11">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 11</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio41" data-item="11" name="radio11" value="1"/>
+                                        <label for="radio41">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio42" data-item="11" name="radio11" value="2"/>
+                                        <label for="radio42">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio43" data-item="11" name="radio11" value="3"/>
+                                        <label for="radio43">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio44" data-item="11" name="radio11" value="4"/>
+                                        <label for="radio44">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="12">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 12</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio45" data-item="12" name="radio12" value="1"/>
+                                        <label for="radio45">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio46" data-item="12" name="radio12" value="2"/>
+                                        <label for="radio46">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio47" data-item="12" name="radio12" value="3"/>
+                                        <label for="radio47">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio48" data-item="12" name="radio12" value="4"/>
+                                        <label for="radio48">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="13">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 13</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio49" data-item="13" name="radio13" value="1"/>
+                                        <label for="radio49">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio50" data-item="13" name="radio13" value="2"/>
+                                        <label for="radio50">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio51" data-item="13" name="radio13" value="3"/>
+                                        <label for="radio51">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio52" data-item="13" name="radio13" value="4"/>
+                                        <label for="radio52">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="14">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 14</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio53" data-item="14" name="radio14" value="1"/>
+                                        <label for="radio53">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio54" data-item="14" name="radio14" value="2"/>
+                                        <label for="radio54">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio55" data-item="14" name="radio14" value="3"/>
+                                        <label for="radio55">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio56" data-item="14" name="radio14" value="4"/>
+                                        <label for="radio56">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="15">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 15</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio57" data-item="15" name="radio15" value="1"/>
+                                        <label for="radio57">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio58" data-item="15" name="radio15" value="2"/>
+                                        <label for="radio58">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio59" data-item="15" name="radio15" value="3"/>
+                                        <label for="radio59">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio60" data-item="15" name="radio15" value="4"/>
+                                        <label for="radio60">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="16">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 16</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio61" data-item="16" name="radio16" value="1"/>
+                                        <label for="radio61">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio62" data-item="16" name="radio16" value="2"/>
+                                        <label for="radio62">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio63" data-item="16" name="radio16" value="3"/>
+                                        <label for="radio63">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio64" data-item="16" name="radio16" value="4"/>
+                                        <label for="radio64">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="17">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 17</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio65" data-item="17" name="radio17" value="1"/>
+                                        <label for="radio65">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio66" data-item="17" name="radio17" value="2"/>
+                                        <label for="radio66">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio67" data-item="17" name="radio17" value="3"/>
+                                        <label for="radio67">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio68" data-item="17" name="radio17" value="4"/>
+                                        <label for="radio68">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="18">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 18</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio69" data-item="18" name="radio18" value="1"/>
+                                        <label for="radio69">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio70" data-item="18" name="radio18" value="2"/>
+                                        <label for="radio70">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio71" data-item="18" name="radio18" value="3"/>
+                                        <label for="radio71">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio72" data-item="18" name="radio18" value="4"/>
+                                        <label for="radio72">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="19">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 19</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio73" data-item="19" name="radio19" value="1"/>
+                                        <label for="radio73">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio74" data-item="19" name="radio19" value="2"/>
+                                        <label for="radio74">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio75" data-item="19" name="radio19" value="3"/>
+                                        <label for="radio75">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio76" data-item="19" name="radio19" value="4"/>
+                                        <label for="radio76">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-page" data-page="20">
+                                <div class="mm-survery-content">
+                                    <div class="mm-survey-question">
+                                        <p>질문 20</p>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio77" data-item="20" name="radio20" value="1"/>
+                                        <label for="radio77">
+                                            <span></span>
+                                            <p>대답 1</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio78" data-item="20" name="radio20" value="2"/>
+                                        <label for="radio78">
+                                            <span></span>
+                                            <p>대답 2</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio79" data-item="20" name="radio20" value="3"/>
+                                        <label for="radio79">
+                                            <span></span>
+                                            <p>대답 3</p>
+                                        </label>
+                                    </div>
+                                    <div class="mm-survey-item">
+                                        <input type="radio" id="radio80" data-item="20" name="radio20" value="4"/>
+                                        <label for="radio80">
+                                            <span></span>
+                                            <p>대답 4</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mm-survey-bottom">
+                                <div class="mm-survey-container">
+                                    <div class="mm-survey-controller">
+                                        <div class="mm-prev-btn">
+                                            <button>Prev</button>
+                                        </div>
+                                        <div class="mm-next-btn">
+                                            <button disabled="true">Next</button>
+                                        </div>
+                                        <div class="mm-finish-btn">
+                                            <button>Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- partial -->
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+                    <script src="./script.js"></script>
 
-				<div class="mm-survey-bottom">
-					<div class="mm-survey-container">
-
-						<div class="mm-survey-page active" data-page="1">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 1</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio01" data-item="1" name="radio1" value="1" />
-									<label for="radio01"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio02" data-item="1" name="radio1" value="2" />
-									<label for="radio02"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio03" data-item="1" name="radio1" value="3" />
-									<label for="radio03"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio04" data-item="1" name="radio1" value="4" />
-									<label for="radio04"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="2">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 2</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio05" data-item="2" name="radio2" value="1" />
-									<label for="radio05"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio06" data-item="2" name="radio2" value="2" />
-									<label for="radio06"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio07" data-item="2" name="radio2" value="3" />
-									<label for="radio07"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio08" data-item="2" name="radio2" value="4" />
-									<label for="radio08"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="3">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 3</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio09" data-item="3" name="radio3" value="1" />
-									<label for="radio09"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio10" data-item="3" name="radio3" value="2" />
-									<label for="radio10"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio11" data-item="3" name="radio3" value="3" />
-									<label for="radio11"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio12" data-item="3" name="radio3" value="4" />
-									<label for="radio12"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="4">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 4</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio13" data-item="4" name="radio4" value="1" />
-									<label for="radio13"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio14" data-item="4" name="radio4" value="2" />
-									<label for="radio14"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio15" data-item="4" name="radio4" value="3" />
-									<label for="radio15"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio16" data-item="4" name="radio4" value="4" />
-									<label for="radio16"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="5">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 5</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio17" data-item="5" name="radio5" value="1" />
-									<label for="radio17"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio18" data-item="5" name="radio5" value="2" />
-									<label for="radio18"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio19" data-item="5" name="radio5" value="3" />
-									<label for="radio19"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio20" data-item="5" name="radio5" value="4" />
-									<label for="radio20"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="6">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 6</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio21" data-item="6" name="radio6" value="1" />
-									<label for="radio21"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio22" data-item="6" name="radio6" value="2" />
-									<label for="radio22"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio23" data-item="6" name="radio6" value="3" />
-									<label for="radio23"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio24" data-item="6" name="radio6" value="4" />
-									<label for="radio24"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="7">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 7</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio25" data-item="7" name="radio7" value="1" />
-									<label for="radio25"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio26" data-item="7" name="radio7" value="2" />
-									<label for="radio26"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio27" data-item="7" name="radio7" value="3" />
-									<label for="radio27"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio28" data-item="7" name="radio7" value="4" />
-									<label for="radio28"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="8">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 8</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio29" data-item="8" name="radio8" value="1" />
-									<label for="radio29"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio30" data-item="8" name="radio8" value="2" />
-									<label for="radio30"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio31" data-item="8" name="radio8" value="3" />
-									<label for="radio31"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio32" data-item="8" name="radio8" value="4" />
-									<label for="radio32"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="9">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 9</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio32" data-item="9" name="radio9" value="1" />
-									<label for="radio32"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio33" data-item="9" name="radio9" value="2" />
-									<label for="radio33"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio34" data-item="9" name="radio9" value="3" />
-									<label for="radio34"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio35" data-item="9" name="radio9" value="4" />
-									<label for="radio35"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="10">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 10</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio36" data-item="10" name="radio10" value="1" />
-									<label for="radio36"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio36" data-item="10" name="radio10" value="2" />
-									<label for="radio36"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio37" data-item="10" name="radio10" value="3" />
-									<label for="radio37"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio38" data-item="10" name="radio10" value="4" />
-									<label for="radio38"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="11">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 11</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio39" data-item="11" name="radio11" value="1" />
-									<label for="radio39"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio40" data-item="11" name="radio11" value="2" />
-									<label for="radio40"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio41" data-item="11" name="radio11" value="3" />
-									<label for="radio41"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio42" data-item="11" name="radio11" value="4" />
-									<label for="radio42"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="12">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 12</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio43" data-item="12" name="radio12" value="1" />
-									<label for="radio43"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio44" data-item="12" name="radio12" value="2" />
-									<label for="radio44"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio45" data-item="12" name="radio12" value="3" />
-									<label for="radio45"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio46" data-item="12" name="radio12" value="4" />
-									<label for="radio46"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="13">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 13</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio47" data-item="13" name="radio13" value="1" />
-									<label for="radio47"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio48" data-item="13" name="radio13" value="2" />
-									<label for="radio48"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio49" data-item="13" name="radio13" value="3" />
-									<label for="radio49"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio50" data-item="13" name="radio13" value="4" />
-									<label for="radio50"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="14">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 14</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio51" data-item="14" name="radio14" value="1" />
-									<label for="radio51"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio52" data-item="14" name="radio14" value="2" />
-									<label for="radio52"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio53" data-item="14" name="radio14" value="3" />
-									<label for="radio53"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio54" data-item="14" name="radio14" value="4" />
-									<label for="radio54"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="15">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 15</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio55" data-item="15" name="radio15" value="1" />
-									<label for="radio55"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio56" data-item="15" name="radio15" value="2" />
-									<label for="radio56"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio57" data-item="15" name="radio15" value="3" />
-									<label for="radio57"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio58" data-item="15" name="radio15" value="4" />
-									<label for="radio58"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="16">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 16</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio59" data-item="16" name="radio16" value="1" />
-									<label for="radio59"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio60" data-item="16" name="radio16" value="2" />
-									<label for="radio60"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio61" data-item="16" name="radio16" value="3" />
-									<label for="radio61"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio62" data-item="16" name="radio16" value="4" />
-									<label for="radio62"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="17">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 17</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio63" data-item="17" name="radio17" value="1" />
-									<label for="radio63"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio64" data-item="17" name="radio17" value="2" />
-									<label for="radio64"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio65" data-item="17" name="radio17" value="3" />
-									<label for="radio65"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio66" data-item="17" name="radio17" value="4" />
-									<label for="radio66"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="18">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 18</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio67" data-item="18" name="radio18" value="1" />
-									<label for="radio67"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio68" data-item="18" name="radio18" value="2" />
-									<label for="radio68"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio69" data-item="18" name="radio18" value="3" />
-									<label for="radio69"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio70" data-item="18" name="radio18" value="4" />
-									<label for="radio70"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="19">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 19</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio71" data-item="19" name="radio19" value="1" />
-									<label for="radio71"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio72" data-item="19" name="radio19" value="2" />
-									<label for="radio72"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio73" data-item="19" name="radio19" value="3" />
-									<label for="radio73"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio74" data-item="19" name="radio19" value="4" />
-									<label for="radio74"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						<div class="mm-survey-page" data-page="20">
-							<div class="mm-survery-content">
-								<div class="mm-survey-question">
-									<p>질문 20</p>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio75" data-item="20" name="radio20" value="1" />
-									<label for="radio75"><span></span><p>대답 1</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio76" data-item="20" name="radio20" value="2" />
-									<label for="radio76"><span></span><p>대답 2</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio77" data-item="20" name="radio20" value="3" />
-									<label for="radio77"><span></span><p>대답 3</p></label>
-								</div>
-								<div class="mm-survey-item">
-									<input type="radio" id="radio78" data-item="20" name="radio20" value="4" />
-									<label for="radio78"><span></span><p>대답 4</p></label>
-								</div>
-							</div>
-						</div>
-						
-					<div class="mm-survey-controller">
-						<div class="mm-prev-btn">
-							<button>Prev</button>
-						</div>
-						<div class="mm-next-btn">
-							<button disabled="true">Next</button>
-						</div>
-						<div class="mm-finish-btn">
-							<button>Submit</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>
+                </body>
+            </html>
