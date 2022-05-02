@@ -17,6 +17,8 @@ jQuery('.mm-prev-btn').hide();
 	deliverStatus();
 	submitData();
 	goBack();
+	
+	
 
 	function init() {
 		
@@ -111,7 +113,6 @@ jQuery('.mm-prev-btn').hide();
 	}
 
 	function buildProgress(g) {
-
 		if(g > 1){
 			g = g - 1;
 		}
@@ -120,7 +121,7 @@ jQuery('.mm-prev-btn').hide();
 		}
 		g = g * 100;
 		jQuery('.mm-survey-progress-bar').css({ 'width' : g+'%' });
-
+		jQuery('#progress-bar').css({'left':g*10.85})
 	}
 
 	function goToSlide(x) {
