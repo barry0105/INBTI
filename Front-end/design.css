@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "main_font";
-    src: url("./survey/fonts/main_font.ttf");
+    font-family: "dongle";
+    src: url("./survey/fonts/dongle.ttf");
+    font-size: larger;
 }
 body{
     background-color: rgb(255, 255, 255);   
@@ -20,7 +21,6 @@ body{
 }
 
 #to_board{
-    font-family: "main_font";
     margin: 0 auto;
     background-color: rgba(216, 112, 147, 0);
     width: 250px;
@@ -31,7 +31,6 @@ body{
     border: 0;
 }
 #to_question{
-    font-family: "main_font";
     margin: 0 auto;
     background-color: rgba(216, 112, 147, 0);
     width: 200px;
