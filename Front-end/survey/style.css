@@ -158,10 +158,14 @@ body{
 	padding: 10px 10px;
 	margin: 0px !important;
 }
-.logo-main-form{
+.logo-main{
 	position: absolute;
 	left: 6%;
 	top: -1%;
+	z-index: 2;
+}
+.logo-main:hover{
+	cursor: url('../Picture/cursor_click.png'), auto;
 }
 .mm-survery-content label:hover {
 	cursor: url('../Picture/cursor_click.png'), auto;
