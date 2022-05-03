@@ -33,14 +33,18 @@ jQuery('.mm-prev-btn').hide();
 		});
 
 	}
-
 	function getCount() {
 
 		count = jQuery('.mm-survey-page').length;
 		return count;
 
 	}
-
+	function Enter() { //키보드 개발 예정
+		jQuery('.input').on('keyup', function(key){
+			if(key.keyCode==13) {
+				alert("엔터키 이벤트");
+		}
+	});
 	function goToNext() {
 
 		jQuery('.mm-next-btn').on('click', function() {
@@ -241,7 +245,7 @@ jQuery('.mm-prev-btn').hide();
 			jQuery('.mm-survey-progress').hide();
 		});
 	}
-	function confirmtomain(){ //메인화면 정말로 갈건가요? 하고 질문할 코드 작성 
+	function confirmtomain(){
 		jQuery('.logo-main').on('click', function(){
 			var tomain = confirm('정말 메인화면으로 돌아가시겠습니까?\n(진행사항이 저장되지 않습니다.)');
 			if(tomain){
