@@ -17,6 +17,7 @@ jQuery('.mm-prev-btn').hide();
 	deliverStatus();
 	submitData();
 	confirmtomain();
+	Enter();
 	function init() {
 		
 		jQuery('.mm-survey-container .mm-survey-page').each(function() {
@@ -40,11 +41,16 @@ jQuery('.mm-prev-btn').hide();
 
 	}
 	function Enter() { //키보드 개발 예정
-		jQuery('.input').on('keyup', function(key){
+		jQuery('body').on('keyup', function(key){
+			
 			if(key.keyCode==13) {
-				alert("엔터키 이벤트");
+				if( jQuery('input:checked').length == jQuery('.mm-survey-page').attr('data-page')) {
+					//console.log(item.data('page'));
+					jQuery('.mm-next-btn').trigger('click');
+				}
 		}
 	});
+}
 	function goToNext() {
 
 		jQuery('.mm-next-btn').on('click', function() {
@@ -287,7 +293,6 @@ jQuery('.mm-prev-btn').hide();
 			else if((total >= result_matching[i]+5 && total < result_matching[i]+10) || total == 80){
 				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>Total : '+total);
 			}
-
 		}
 		
 	}
