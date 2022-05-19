@@ -12,24 +12,37 @@
         div{
             text-align: center;
         } 
-    </style>
+        .left{
+            float: left;
+        }
+        ul li{
+            margin: 20px;
+            display: inline-block;
+            list-style: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .right{
+            float: right;
+        }
     </style>
 </head>
 <body>
         <div class="main_logo">
-            <a href="#"><img class="logo"  src="Picture/LOGO.png"></a>
-            <caption id="bottom_text">
-        </caption>
+            <ul class="left">
+                <li>도움말</li>
+                <li>개발자</li>
+            </ul>
+             <a href="#"><img class="logo"  src="Picture/LOGO.png"></a>
+            <caption id="bottom_text"></caption>
+            <ul class="right">
+                <li>도움말</li>
+                <li>개발자</li>
+            </ul>
         </div>
-        <aside>
-            <input type="image" src="Picture/ad1.png" id="left_side">
-       </aside>
-       <aside>
-           <input type="image" src="Picture/ad2.png" id="right_side">
-       </aside>
        <div>
         <img class="main_pic" src="Picture/main.png">
-        <h3 id="text_main" style="font-family: dongle;">첫취업 제대로 알고 하자!<br>
+        <h3 id="text_main" style="font-family: main_font;">첫취업 제대로 알고 하자!<br>
         인마고 취업 도우미
         </h3>
     </div>

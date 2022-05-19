@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "dongle";
-    src: url("./survey/fonts/dongle.ttf");
+    font-family: "main_font";
+    src: url("./survey/fonts/main_font.ttf");
     font-size: larger;
 }
 body{
