@@ -2,44 +2,31 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Picture/title.ico" rel="shortcut icon" type="image/x-icon">
     <link href="Picture/title.ico" rel="icon" type="image/x-icon">
     <title>INBTI</title>
     <link rel="stylesheet" href="design.css">
     <style>
-        div{
-            text-align: center;
-        } 
-        .left{
-            float: left;
-        }
-        ul li{
-            margin: 20px;
-            display: inline-block;
-            list-style: none;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .right{
-            float: right;
-        }
+        div{text-align: center;} 
+        a:link, a:visited{color: black; text-decoration: none;}
+        .gnb>li:hover {background-color: #dcdcdc;}
+        .gnb>li{color: #ccc;}
+        ul{list-style: none; float: left;}
+        .gnb{position: fixed; top: 50%; transform: translateY(-50%);}
+        li{margin: 30px;}
     </style>
 </head>
 <body>
         <div class="main_logo">
-            <ul class="left">
-                <li>도움말</li>
-                <li>개발자</li>
-            </ul>
              <a href="#"><img class="logo"  src="Picture/LOGO.png"></a>
             <caption id="bottom_text"></caption>
-            <ul class="right">
-                <li>도움말</li>
-                <li>개발자</li>
-            </ul>
         </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">도움말</a></li>
+                <li><a href="#">개발자</a></li>
+            </ul>
+        </nav>
        <div>
         <img class="main_pic" src="Picture/main.png">
         <h3 id="text_main" style="font-family: main_font;">첫취업 제대로 알고 하자!<br>

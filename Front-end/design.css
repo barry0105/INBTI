@@ -24,7 +24,7 @@ aside{
     cursor: url("Picture/cursor_click.png"), auto;
 }
 #text_main{
-    font-size: 1rem;
+    font-size: 2em;
 }
 
 #to_board{
