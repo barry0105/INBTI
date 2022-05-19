@@ -17,7 +17,7 @@ jQuery('.mm-prev-btn').hide();
 	deliverStatus();
 	submitData();
 	confirmtomain();
-	Enter();
+	KeyBoard();
 	function init() {
 		
 		jQuery('.mm-survey-container .mm-survey-page').each(function() {
@@ -40,16 +40,40 @@ jQuery('.mm-prev-btn').hide();
 		return count;
 
 	}
-	function Enter() { //키보드 개발 예정
+	function KeyBoard() { //키보드 개발 예정
+		current = 1
 		jQuery('body').on('keyup', function(key){
-			
-			if(key.keyCode==13) {
-				if(jQuery('.mm-next-btn button').attr('disabled')!='disabled') {
-					console.log();
+		
+		console.log(current)
+		if(key.keyCode==13) {
+			if(jQuery('.mm-next-btn button').attr('disabled')!='disabled') {
+				current += 1
+				if(current>20){
+					jQuery('.mm-finish-btn button').trigger('click');
+				}
+				else{
 					jQuery('.mm-next-btn').trigger('click');
 				}
+			}
+		}
+		if(key.keyCode==49){
+			bt_pushed = 1
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=1]').trigger('click');
+		}
+		if(key.keyCode==50){
+			bt_pushed = 2
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=2]').trigger('click');
+		}
+		if(key.keyCode==51){
+			bt_pushed = 3
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=3]').trigger('click');
+		}
+		if(key.keyCode==52){
+			bt_pushed = 4
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=4]').trigger('click');
 		}
 	});
+	
 }
 	function goToNext() {
 
