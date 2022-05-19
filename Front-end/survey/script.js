@@ -44,8 +44,8 @@ jQuery('.mm-prev-btn').hide();
 		jQuery('body').on('keyup', function(key){
 			
 			if(key.keyCode==13) {
-				if( jQuery('input:checked').length == jQuery('.mm-survey-page').attr('data-page')) {
-					//console.log(item.data('page'));
+				if(jQuery('.mm-next-btn button').attr('disabled')!='disabled') {
+					console.log();
 					jQuery('.mm-next-btn').trigger('click');
 				}
 		}

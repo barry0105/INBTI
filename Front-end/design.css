@@ -7,7 +7,10 @@ body{
     background-color: rgb(255, 255, 255);
     cursor: url("Picture/cursor_normalsmall.png"), auto;
 }
-
+aside{
+    width: 100%;
+    height: 100%;
+}
 .logo{
     max-width: 20%;
     margin: 0 auto;
