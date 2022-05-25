@@ -1,11 +1,11 @@
 @font-face {
     font-family: "main_font";
-    src: url("./survey/fonts/main_font.ttf");
+    src: url("../fonts/main_font.ttf");
     font-size: larger;
 }
 body{
     background-color: rgb(255, 255, 255);
-    cursor: url("Picture/cursor_normalsmall.png"), auto;
+    cursor: url("../Picture/cursor_normalsmall.png"), auto;
 }
 aside{
     width: 100%;
@@ -21,7 +21,7 @@ aside{
     max-height: 30%;
 }
 .logo:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+    cursor: url("../Picture/cursor_click.png"), auto;
 }
 #text_main{
     font-size: 2em;
@@ -38,7 +38,7 @@ aside{
     border: 0;
 }
 #to_board:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+    cursor: url("../Picture/cursor_click.png"), auto;
 }
 #to_question{
     margin: 0 auto;
@@ -51,7 +51,7 @@ aside{
     border: 0;
 }
 #to_question:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+    cursor: url("../Picture/cursor_click.png"), auto;
 }   
 #question{
     display: none;
@@ -70,7 +70,7 @@ aside{
     float: left;
 }
 #left_side:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+    cursor: url("../Picture/cursor_click.png"), auto;
 }
 #right_side{
     margin: 10px;
@@ -80,5 +80,5 @@ aside{
     float: right;
 }
 #right_side:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+    cursor: url("../Picture/cursor_click.png"), auto;
 }
