@@ -43,10 +43,14 @@
 .board{
     width: 270px;
     height: 200px;
+    position: relative;
+    right: 20%;
 }
 .survey{
     width: 200px;
     height: 230px;
+    position: relative;
+    right: 20%;
 }
 h2{
     padding-top: 20px;
