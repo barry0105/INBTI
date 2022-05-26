@@ -1,84 +1,56 @@
+@charset "utf-8";
+
 @font-face {
     font-family: "main_font";
-    src: url("./survey/fonts/main_font.ttf");
-    font-size: larger;
+    src: url(./survey/fonts/main_font.ttf);
 }
-body{
-    background-color: rgb(255, 255, 255);
-    cursor: url("Picture/cursor_normalsmall.png"), auto;
+@font-face{
+    font-family: "Medium";
+    src: url(./survey/fonts/Medium.ttf);
 }
-aside{
-    width: 100%;
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-.logo{
-    max-width: 20%;
-    margin: 0 auto;
+.header{
+    background: url(./Picture/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 475px;
 }
-.main_pic{
-    margin: 0 auto;
-    max-width: 30%;
-    max-height: 30%;
+.LOGO{
+    width: 350px;
+    height: 150px;
+    position: relative;
+    left: 15%;
+    top: 10%;
 }
-.logo:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+.main{
+    font-family: "main_font";
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    left: 8%;
+    top: 30%;
+    overflow-x: hidden;
+    color: rgb(118, 118, 184);
 }
-#text_main{
-    font-size: 2em;
+.botton{
+    text-align: center;
+    padding: 20px;
 }
-
-#to_board{
-    margin: 0 auto;
-    background-color: rgba(216, 112, 147, 0);
-    width: 250px;
-    height: 180px;
-    margin: 10px;
-    font-size: 30px;
-    border-radius: 5%;
-    border: 0;
+.board{
+    width: 270px;
+    height: 200px;
 }
-#to_board:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
-}
-#to_question{
-    margin: 0 auto;
-    background-color: rgba(216, 112, 147, 0);
+.survey{
     width: 200px;
     height: 230px;
-    margin: 10px;
-    font-size: 30px;
-    border-radius: 5%;
-    border: 0;
 }
-#to_question:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
-}   
-#question{
-    display: none;
-}
-#board{
-    display: none;
-}
-#backtomain{
-    display: none;
-}
-#left_side{
-    margin: 10px;
-    width: 200px;
-    height: 500px;
-    background-color: white;
-    float: left;
-}
-#left_side:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
-}
-#right_side{
-    margin: 10px;
-    width: 200px;
-    height: 500px;
-    background-color: white;
-    float: right;
-}
-#right_side:hover{
-    cursor: url("Picture/cursor_click.png"), auto;
+h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Medium";
 }

@@ -6,48 +6,16 @@
     <link href="Picture/title.ico" rel="icon" type="image/x-icon">
     <title>INBTI</title>
     <link rel="stylesheet" href="design.css">
-    <style>
-        div{text-align: center;} 
-        a:link, a:visited{color: black; text-decoration: none;}
-        .gnb>li:hover {background-color: #dcdcdc;}
-        .gnb>li{color: #ccc;}
-        ul{list-style: none; float: left;}
-        .gnb{position: fixed; top: 50%; transform: translateY(-50%);}
-        li{margin: 30px;}
-    </style>
 </head>
 <body>
-        <div class="main_logo">
-             <a href="#"><img class="logo"  src="Picture/LOGO.png"></a>
-            <caption id="bottom_text"></caption>
-        </div>
-        <nav>
-            <ul class="gnb">
-                <li><a href="#">도움말</a></li>
-                <li><a href="#">개발자</a></li>
-            </ul>
-        </nav>
-       <div>
-        <img class="main_pic" src="Picture/main.png">
-        <h3 id="text_main" style="font-family: main_font;">첫취업 제대로 알고 하자!<br>
-        인마고 취업 도우미
-        </h3>
+    <div class="header">
+        <a href="#"><img class="LOGO" src="./Picture/LOGO1.png"></a>
+        <h3 class="main">첫취업 제대로 알고 하자!<br>인마고 취업도우미</h3>
     </div>
-    <footer>
-        <div class="button_main">
-            <input type="image" src="Picture/board.png" height="100" width="170" id="to_board" value="게시판"/><a href="">
-            </a>
-            <a href="./survey\index.html"><input type="image" src="Picture/survey.png" height="100" width="170" value="설문조사" id="to_question"></a>
-        </div>
-    </footer>
-        
-    <section id="question">
-        <h1> 설문조사</h1>
-    </section>
-    <section id="board">
-    </section>
-    <input type="button" value="뒤로가기" id="backtomain">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="Application.js"></script>
+   <!-- <h2>INBTI</h2>   -->
+    <div class="botton">
+        <a href=""></a><input type="image" src="Picture/board.png" height="100" width="170" id="to_board" value="게시판" class="board"/> </a>
+        <a href="./survey\index.html"><input type="image" src="Picture/survey.png" height="100" width="170" value="설문조사" class="survey"></a>
+    </div>
 </body>
 </html>
