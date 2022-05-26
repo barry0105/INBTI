@@ -279,7 +279,7 @@ jQuery('.mm-prev-btn').hide();
 		jQuery('.logo-main').on('click', function(){
 			var tomain = confirm('정말 메인화면으로 돌아가시겠습니까?\n(진행사항이 저장되지 않습니다.)');
 			if(tomain){
-				location.replace('../index.html');
+				location.replace('../Main/index.html');
 			}
 			else{
 				//
