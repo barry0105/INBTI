@@ -6,7 +6,7 @@
 }
 @font-face{
     font-family: "Medium";
-    src: url(./survey/fonts/Medium.ttf);
+    src: url(../fonts/Medium.ttf);
 }
 *{
     margin: 0;
