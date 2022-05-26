@@ -296,7 +296,9 @@ jQuery('.mm-prev-btn').hide();
 		var g;
 		var c = 0;
 		var result_matching = [20,30,40,50,60,70];
-		
+		var result_comment = ['전공이 맞지 않는 당신, 다른 진로를 찾아보는건 어떨까요?','정해진 일만 하고 싶은 당신, 블루칼라(생산직)도 어떨까요?','하드웨어를 좋아하는 당신! 하드웨어 개발은 어떨까요?','네트워크 개발자가 되어 세상에 인터넷을 연결해 보는건 어떨까요?','돈이 많이 중요한 당신 ! 대기업은 어떨까요?','안정적인 직장을 추구하는 당신 ! 공기업은 어떨까요?']
+		var result_comment_half = ['취업하는게 아직 두렵다면 대학 진학도 고민해보세요 !','도전정신이 뛰어난 당신 ! 스타트업은 어떤가요?','하드웨어와 소프트웨어를 고루 사랑하는 당신 ! 펌웨어 개발은 어떤가요?','소프트웨어가 너무 좋은 당신 ! 소프트웨어 개발자는 어떨까요?','나라를 사랑하는 당신 ! 군/공무원은 어떨까요?','당신은 무엇이든 할 수 있어요 ! 만능입니다!!']
+
 		var comment_result = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/20~25.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/30~35.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/40~45.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/50~55.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/60~65.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/70~75.png?raw=true"];
 		var comment_result_half = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/25~30.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/35~40.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/45~50.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/55~60.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/65~70.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/75~80.png?raw=true"];
 		jQuery('.mm-survey-item input:checked').each(function(index, val) {
@@ -313,10 +315,10 @@ jQuery('.mm-prev-btn').hide();
 		});
 		for(let i=0;i<result_matching.length;i++){
 			if(total >= result_matching[i] && total < result_matching[i]+5){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>Total : '+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>당신의 유형은? : '+result_comment[i]);
 			}
 			else if((total >= result_matching[i]+5 && total < result_matching[i]+10) || total == 80){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>Total : '+total);
+				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>당신의 유형은? : '+result_comment_half[i]);
 			}
 		}
 		
