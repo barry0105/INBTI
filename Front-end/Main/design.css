@@ -45,6 +45,8 @@
     height: 200px;
     position: relative;
     right: 20%;
+    display: inline-block;
+    vertical-align: top;
 }
 .survey{
     width: 200px;
@@ -61,6 +63,9 @@ h2{
 p{
     position: relative;
     text-align: center;
-    left: 80px;
-    bottom: 20%;
+    left: 45%;
+    top: 5%;
+    width: 400px;
+    height: 40px;
+    vertical-align: top;
 }
