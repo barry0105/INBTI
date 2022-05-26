@@ -296,6 +296,7 @@ jQuery('.mm-prev-btn').hide();
 		var g;
 		var c = 0;
 		var result_matching = [20,30,40,50,60,70];
+		
 		var comment_result = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/20~25.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/30~35.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/40~45.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/50~55.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/60~65.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/70~75.png?raw=true"];
 		var comment_result_half = ["https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/25~30.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/35~40.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/45~50.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/55~60.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/65~70.png?raw=true","https://github.com/barry0105/INBTI/blob/main/Front-end/Picture/75~80.png?raw=true"];
 		jQuery('.mm-survey-item input:checked').each(function(index, val) {
