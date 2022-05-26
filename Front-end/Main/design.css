@@ -58,3 +58,9 @@ h2{
     font-size: 1em;
     font-family: "Medium";
 }
+p{
+    position: relative;
+    text-align: center;
+    left: 80px;
+    bottom: 20%;
+}
