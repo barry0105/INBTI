@@ -40,7 +40,7 @@ jQuery('.mm-prev-btn').hide();
 		return count;
 
 	}
-	function KeyBoard() { //키보드 개발 예정
+	function KeyBoard() { 
 		current = 1
 		jQuery('body').on('keyup', function(key){
 		
