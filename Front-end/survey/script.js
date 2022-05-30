@@ -11,8 +11,6 @@ jQuery('.mm-prev-btn').hide();
 	goToNext();
 	goToPrev();
 	getCount();
-	// checkStatus();
-	// buttonConfig();
 	buildStatus();
 	deliverStatus();
 	submitData();
@@ -207,7 +205,6 @@ jQuery('.mm-prev-btn').hide();
 
 		jQuery(item).on('click', function() {
 			if( jQuery('input:checked').length > 0 ) {
-		    	// console.log(item.val());
 		    	jQuery('label').parent().removeClass('active');
 		    	item.closest( 'li' ).addClass('active');
 			}
@@ -315,10 +312,14 @@ jQuery('.mm-prev-btn').hide();
 		});
 		for(let i=0;i<result_matching.length;i++){
 			if(total >= result_matching[i] && total < result_matching[i]+5){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result[i]+'"/> <br>당신의 유형은? : '+result_comment[i]);
+				jQuery('.mm-survey-results-img').html('<img src="'+comment_result[i]+'"/><br>');
+				jQuery('.mm-survey-results-text').html('<p>'+result_comment[i]+'</p>');
+				break
 			}
 			else if((total >= result_matching[i]+5 && total < result_matching[i]+10) || total == 80){
-				jQuery('.mm-survey-results-score').html('<img src="'+comment_result_half[i]+'"/> <br>당신의 유형은? : '+result_comment_half[i]);
+				jQuery('.mm-survey-results-img').html('<img src="'+comment_result_half[i]+'"/><br>');
+				jQuery('.mm-survey-results-text').html('<p>'+result_comment_half[i]+'</p>');
+				break
 			}
 		}
 		

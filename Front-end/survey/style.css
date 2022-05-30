@@ -29,6 +29,7 @@ body{
 	width: 100%;
 	min-height: 600px;
 	background: #fff;
+	text-align: center;
 }
 
 .mm-survey-page {
@@ -143,7 +144,6 @@ body{
 
 .mm-survey-q li {
 	display: block;
-	/*padding: 20px 0px;*/
 	margin-bottom: 10px;
 	width: 100%;
 	background: #fff;
@@ -257,18 +257,18 @@ input[type="radio"]:checked + label span {
 	display: none;
 }
 
-.mm-survey-results-score {
+.mm-survey-results-img {
 	margin: 0px;
     padding: 0px;
     padding-top: 40px;
     padding-bottom: 40px;
-    text-align: center;
-    font-size: 80px;
     font-family: 'snByulByul';
-    font-weight: 600;
     letter-spacing: -6px;
+	border: 1px solid black;
 }
-
+.mm-survey-results-img img{
+	width: 50%;
+}
 .mm-survey-results-list {
 	list-style-type: none;
 	padding: 0px 15px;
@@ -282,7 +282,10 @@ input[type="radio"]:checked + label span {
     font-family: 'snByulByul';
     font-weight: 300;
 }
-
+.mm-survey-results-text{
+	font-family: 'snByulByul';
+	font-size: 200%;
+}
 .mm-survey-results-item.correct {
 	background: linear-gradient(to left, #4CB8C4, #3CD3AD);
 }
