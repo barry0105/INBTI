@@ -58,19 +58,19 @@ jQuery('.mm-prev-btn').hide();
 		}
 		if(key.keyCode==49){
 			bt_pushed = 1
-			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=1]').trigger('click');
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[itemid=1]').trigger('click');
 		}
 		if(key.keyCode==50){
 			bt_pushed = 2
-			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=2]').trigger('click');
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[itemid=2]').trigger('click');
 		}
 		if(key.keyCode==51){
 			bt_pushed = 3
-			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=3]').trigger('click');
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[itemid=3]').trigger('click');
 		}
 		if(key.keyCode==52){
 			bt_pushed = 4
-			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[value=4]').trigger('click');
+			jQuery('.mm-survey-page[data-page='+current+'] .mm-survey-item input[itemid=4]').trigger('click');
 		}
 	});
 	
