@@ -36,9 +36,16 @@
     overflow-x: hidden;
     color: rgb(118, 118, 184);
 }
-.botton{
+.button{
     text-align: center;
     padding: 20px;
+}
+
+.button a{
+    display: block;
+}
+.button p{
+    display: block;
 }
 .board{
     width: 270px;
