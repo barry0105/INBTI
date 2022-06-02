@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <div class="header">
-        <a href="#"><img class="LOGO" src="../Picture/LOGO1.png"></a>
-        <h3 class="main">첫취업 제대로 알고 하자!<br>인마고 취업도우미</h3>
-    </div>
-   <!-- <h2>INBTI</h2>   -->
-    <div class="button">
-        <a href="../survey\index.html"><img src="../Picture/survey.png" height="100" width="170" value="설문조사" class="survey" ></a>
-        <p>나는 어느 분야로 취업하는 게 좋을까?<br>INBTI로 확인해봐요!</p>
-        <a href=""></a><img src="../Picture/board.png" height="100" width="170" id="to_board" value="게시판" class="board"/> </a>
-        <p>설문조사는 어땠나요?<br> 자유롭게 의견을 남겨주세요!</p>
+    <div class="container">
+        <div class="logo_item">
+            <img src="../Picture/bg1.png" alt="오류 이미지" class="Logo">
+            <img src="../Picture/LOGO1.png" alt="오류 이미지" class="Logo-Text">
+        </div>
+            <div class="survey_item" onclick="location.href='../survey/index.html'">
+                <img src="../Picture/survey.png" class="to_Survey">
+                <h3>나는 어느 분야로 취업하는 게 좋을까?<br>INBTI로 확인해봐요!</h3>
+            </div>
+            <div class="board_item" onclick="location.href='#'">
+                <img src="../Picture/board.png" class="to_Board">
+                <h3>설문조사는 어땠나요?<br> 자유롭게 의견을 남겨주세요!</h3>
+            </div>
     </div>
 </body>
 </html>
