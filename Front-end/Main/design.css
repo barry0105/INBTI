@@ -82,12 +82,9 @@ body {
 }
 .board_item h3{
     font-family: main_font;
-    font-size: 200%;
+    font-size: 1.5em;
     width: 50%;
     position: relative;
     bottom: 70%;
     left: 50%; 
-}
-.board_text{
-    
 }
