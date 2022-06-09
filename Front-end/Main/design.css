@@ -44,6 +44,8 @@ body {
 }
 .to_Survey{
     width: 25%;
+    position: relative;
+    left: 10%;
 }
 .survey_item{
     grid-row-start: 3;
