@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'snByulByul';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.6/snByulByul.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'snByulByul';
+}
+#navbar{
+    background-color:#cdf8ff;
+    border: 1px solid #88e3ff;
+    padding: 10px;
+    position: sticky;
+    display: flex;
+}
+#top_menu ul{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-inline-start: 40px;
+}
+#top_menu ul li{
+    font-size:larger;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: list-item;
+}
+#top_menu ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#setting{
+    
+}
+body{
+    margin: 0;
+    background-image:url("../Picture/bg1.png");
+    background-repeat: no-repeat;
+}
+.logo img{
+    height: 70px;
+}
