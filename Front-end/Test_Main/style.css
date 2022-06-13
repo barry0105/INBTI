@@ -13,6 +13,7 @@
     padding: 10px;
     position: sticky;
     display: flex;
+    justify-content: space-between;
 }
 #top_menu ul{
     align-items: center;
@@ -22,7 +23,8 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    padding-inline-start: 40px;
+    position: relative;
+    right: 3rem;
 }
 #top_menu ul li{
     font-size:larger;
@@ -34,8 +36,15 @@
     text-decoration: none;
     color: gray;
 }
+#top_menu ul li a:hover{
+    color: blue;
+}
 #setting{
-    
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: flex-end;
 }
 body{
     margin: 0;
@@ -44,4 +53,5 @@ body{
 }
 .logo img{
     height: 70px;
+    
 }
