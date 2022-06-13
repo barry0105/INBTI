@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: src(./);
 }
 
 @font-face {
@@ -33,7 +34,6 @@ body {
     grid-column-start: 1;
     grid-column-end: 5;
     overflow: hidden;
-
 }
 .Logo{
     width:100%;
