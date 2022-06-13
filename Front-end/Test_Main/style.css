@@ -24,12 +24,12 @@
     padding: 0;
     height: 100%;
     position: relative;
-    right: 3rem;
+    right: 4.5rem;
 }
 #top_menu ul li{
     font-size:larger;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     display: list-item;
 }
 #top_menu ul li a{
@@ -38,6 +38,15 @@
 }
 #top_menu ul li a:hover{
     color: blue;
+}
+#middle{
+    position: absolute;
+    font-size: 3rem;
+    color: gray;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 #setting{
     align-items: center;
@@ -50,8 +59,8 @@ body{
     margin: 0;
     background-image:url("../Picture/bg1.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .logo img{
     height: 70px;
-    
 }
