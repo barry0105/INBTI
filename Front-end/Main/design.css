@@ -44,6 +44,8 @@ body {
 }
 .to_Survey{
     width: 25%;
+    position: relative;
+    left: 10%;
 }
 .survey_item{
     grid-row-start: 3;
@@ -80,7 +82,7 @@ body {
 }
 .board_item h3{
     font-family: main_font;
-    font-size: 200%;
+    font-size: 1.5em;
     width: 50%;
     position: relative;
     bottom: 70%;
