@@ -27,8 +27,6 @@ jQuery('.mm-prev-btn').hide();
 			page = item.data('page');
 
 			item.addClass('mm-page-'+page);
-			//item.html(page);
-
 		});
 
 	}
