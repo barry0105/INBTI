@@ -7,11 +7,6 @@
 *{
     font-family: 'snByulByul';
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 #navbar{
     background-color:#cdf8ff;
     border: 1px solid #88e3ff;
@@ -45,15 +40,16 @@
     color: blue;
 }
 #middle{
-    width: 100%;
-    font-size: 3rem;
+    position: absolute;
+    font-size: 1rem;
     color: gray;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    flex: 1;
 }
-#middle .text{
-    position: relative;
-    top: 25%;
+#middle img{
+    width: 15rem;
 }
 #setting{
     align-items: center;
@@ -62,43 +58,9 @@
     font-size: 2rem;
     justify-content: flex-end;
 }
-html, body{
+body{
     margin: 0;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    background-image:url("../Picture/bg1.png");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-color: lightblue;
 }
 .logo img{
     height: 70px;
-}
-#footer{
-    display: flex;
-    width: 100%;
-    background-color: rgba(100, 100, 100, 100%);
-    justify-content: center;
-    text-align:left;
-    flex-direction: row;
-}
-#left-site{
-    padding: 15px;
-    width: 50%;
-}
-#left-site p{
-    color: wheat;
-}
-#right-site{
-    width: 50%;
-    text-align: right;
-    padding: 15px;
-}
-#right-site p{
-    color: lightblue;
-}
-#right-site a{
-    text-decoration: none;
-    
 }
