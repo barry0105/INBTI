@@ -1,0 +1,20 @@
+.middle-board{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-image: url('../../../public/img/bg1.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.middle-board img{
+    width: 20rem;
+    padding: 30px;
+}
+.middle-board .survey{
+    width: 14rem;
+}

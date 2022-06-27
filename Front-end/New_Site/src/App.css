@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'snByulByul';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.6/snByulByul.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  font-family: 'snByulByul';
+}
+html, body{
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+#root{
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+.wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Text{
+  color: gray;
+  align-self: center;
+}
+.Home{
+  z-index: 5;
+  display: flex;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  font-size: 3rem;
+  z-index: 0;
+  background-image: url('../public/img/bg1.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.Home .Text{
+  position: relative;
+  top: -100px;
+}
+.middle-board{
+  flex: 1;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  background-color: brown;
+  justify-content: center;
+}
+.NotFound{
+  font-family: Arial;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: red;
+  font-size: 4rem;
+}
