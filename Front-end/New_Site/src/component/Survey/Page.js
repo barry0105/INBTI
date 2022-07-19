@@ -46,6 +46,8 @@ function Page1(props) {
             'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
             'Values' : ['T','F','J', 'P']
         },];
+
+        
     const createQuestion = 
             Question.map((li,idx)=>
                 (<div className='Question'> 
@@ -88,6 +90,7 @@ function Page1(props) {
                 </div>
                 )
             );
+
     let [Page,PageChange] = useState(0);    
     const PageSlide = (() =>{
             if(Page < Question.length-1){

@@ -7,7 +7,7 @@
     text-align: center;
     position: relative;
     width: 100%;
-    background-image: url('../../../public/img/bg1.png');
+    background-image: url('../../../public/img/bg.jpg');
     background-repeat: no-repeat;
     background-size:contain;
 }
@@ -15,6 +15,26 @@
     width: 20rem;
     padding: 30px;
 }
+.middle-board img:hover{
+    cursor: pointer;
+}
 .middle-board .survey{
     width: 14rem;
+}
+
+.info{
+    display: flex;
+    flex: 1;
+    background-color:rgb(187,223,219);
+    justify-content: center;
+    align-items: center;
+}
+.info ul li{
+    list-style: none;
+    line-height: 300%;
+}
+.info ul li table{
+    line-height: 200%;
+    border-collapse: collapse;
+    text-align: center;
 }

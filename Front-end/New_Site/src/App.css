@@ -37,13 +37,13 @@ height: 100%;
   justify-content: center;
   font-size: 3rem;
   z-index: 0;
-  background-image: url('../public/img/bg1.png');
+  background-image: url('../public/img/bg.jpg');
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size:contain ;
 }
 .Home .Text{
   position: relative;
-  top: -100px;
+
 }
 .middle-board{
   flex: 1;
@@ -51,8 +51,10 @@ height: 100%;
 .footer{
   display: flex;
   text-align: center;
-  background-color: brown;
+  background-color: RGB(249,169,120);
   justify-content: center;
+  height: 105.7px;
+  flex: 0.238;
 }
 .NotFound{
   font-family: Arial;

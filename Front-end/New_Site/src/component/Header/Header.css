@@ -1,21 +1,19 @@
 .nav{
-    background-color: #eee;
+    background-color: RGB(252,249,234);
     z-index: 5;
   }
   .nav ul{
     margin: 0;
+    padding: 0;
     justify-content:space-between;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   .nav li{
-    position: relative;
     text-align: center;
     list-style: none; 
     margin: 20px;
-    left: -20px;
-    
   }
  .nav li img{
     justify-self: left;
@@ -23,13 +21,14 @@
  }
  .nav-middle{
     display: flex;
-    position: relative;
-    left: -80px;
+    flex: 1;
+    
  }
  .nav-middle li{
     text-decoration: none;
+    font-size: 20px;
  }
- .nav-middle li:hover{
+ .nav-middle a li span:hover{
     color:blue;
     cursor: pointer;
  }
@@ -44,11 +43,10 @@
    display: flex;
    position: fixed;
    right: 0px;
-   top: 5px;
    width: 150px;
    height: 100%;
-   background-color: darkgray;
-   color: black;
+   background-color: RGB(187,223,219);;
+   
  }
  .menu-wrap ul{
    line-height: 250%;
@@ -56,7 +54,6 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-
    height: 100%;
    margin: 20px -10px;
  }
@@ -72,7 +69,7 @@
    margin: -10px;
    padding: 10px;
    width: 130px;
-   background-color: rgb(151, 151, 151);
+   background-color: rgb(137, 189, 184);
    position: fixed;
    right: 10px;
    bottom: 10px;
@@ -89,7 +86,7 @@
    border: 0;
    position: fixed;
    right: 5px;
-   top: 10px;
+   top: 5px;
    width: 30px;
    height: 30px;
  }
@@ -97,3 +94,39 @@
    cursor: pointer;
    background-color: rgb(192, 192, 192);
  }
+.help-Popup{
+  background-color: rgba(0, 0, 0,0.5);
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class-Value{
+  width: 30%;
+  background-color: azure;
+  border-radius: 5px 5px 5px 5px;
+  height: 70%;
+  text-align: center;
+  padding: 10px;
+  line-height: 200%;
+  
+}
+.class-Value ul{
+  padding: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.class-Value li{
+  list-style: none;
+}
+.class-Value li:hover{
+  cursor: pointer;
+}
+.class-Value p{
+  flex: 1;
+}
