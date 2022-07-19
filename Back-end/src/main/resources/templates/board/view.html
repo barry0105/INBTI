@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Board List</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<h1>Board View.</h1>
+		<form action="/board/view/action" id="frm" method="post">
+			<input type="hidden" name="id" th:value="${info.id}">
+			<div class="mb-3">
+			    <label class="form-label">제목</label>
+			    <input type="text" class="form-control" name="title" th:value="${info.title}">
+			</div>
+			<div class="mb-3">
+		    	<label class="form-label">내용</label>
+		    	<textarea class="form-control" rows="5" cols="" name="content" th:text="${info.content}"></textarea>
+			</div>
+			<div class="mb-3">
+			    <label class="form-label">작성자</label>
+			    <input type="text" class="form-control" name="registerId" th:value="${info.registerId}">
+			</div>
+			<div class="float-left">
+				<button type="button" class="btn btn-success" onclick="javascript:location.href='/board/list'">이전으로</button>
+				<button type="submit" class="btn btn-primary">수정하기</button>
+			</div>
+			<div class="float-right">
+				<button type="button" class="btn btn-danger" th:onclick="fnViewDelete()">삭제하기</button>
+			</div>
+		</form>
+	</div>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script th:inline="javascript">
+		function fnViewDelete() {
+			if (confirm("정말 삭제하시겠습니까?")) {
+				let frm = $("#frm");
+				frm.attr("action","/board/view/delete");
+				frm.submit();
+			}
+		}
+	</script>
+</body>
+</html>

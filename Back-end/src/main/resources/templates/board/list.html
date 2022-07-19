@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/default_layout">
+<head>
+	<title>Board List</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+</head>
+	<th:block layout:fragment="content">
+		<div id="wrapper">
+			<div class="container">
+		    	<form action="/board/list" id="frm" method="get">
+				    <div class="col-md-12 mt-4">
+				    	<button type="button" class="btn btn-danger" onclick="fnDelete()">삭제</button>
+				        <button type="button" class="btn btn-primary" onclick="javascript:location.href='/board/write'">작성</button>
+				        <table class="table table-striped table-horizontal table-bordered mt-3">
+				            <thead class="thead-strong">
+				                <tr>
+				                    <th width="5%"><input type="checkbox" id="chkAll"></th>
+				                    <th width="10%">게시글번호</th>
+				                    <th width="">제목</th>
+				                    <th width="20%">작성자</th>
+				                    <th width="10%">조회수</th>
+				                    <th width="20%">작성일</th>
+				                </tr>
+				            </thead>
+				            <tbody id="tbody">
+				            	<tr th:each="list,index : ${resultMap.list}" th:with="paging=${resultMap.paging}">
+									<td>
+										<input type="checkbox" name="deleteId" th:value="${list.id}">
+									</td>
+									<td>
+										<span th:text="${(resultMap.totalCnt - index.index) - (paging.pageNumber * paging.pageSize)}"></span>
+									</td>
+									<td>
+										<a th:href="@{./view(id=${list.id})}"><span th:text="${list.title}"></span></a>
+									</td>
+									<td>
+										<span th:text="${list.registerId}"></span>
+									</td>
+									<td>
+										<span th:text="${list.readCnt}"></span>
+									</td>
+									<td>
+										<span th:text="${list.registerTime}"></span>
+									</td>
+								<tr>
+				            </tbody>
+				        </table>
+				        <div class="row">
+							<div class="col">
+								<ul class="pagination">
+									<li class="page-item" th:each="index : ${#numbers.sequence(1, resultMap.totalPage)}" th:with="paging=${resultMap.paging}">
+										<a class="page-link" th:classappend="${paging.pageNumber ==  (index-1)} ? bg-primary : bg-secondary" th:href="@{./list(page=${index - 1},page=${paging.pageSize})}">
+											<span class="text-white" th:text="${index}"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+				    </div>
+			    </form>
+		    </div>
+	    </div>
+	    <script src="/js/lib/jquery.min.js"></script>
+	    <script src="/js/lib/bootstrap.min.js"></script>
+	    <script th:inline="javascript">
+	    	// header checkbox event
+	    	$("#chkAll").click(function() {
+	    		if (this.checked) {
+	    			$("input[name='deleteId']").prop("checked", true);
+	    		} else {
+	    			$("input[name='deleteId']").prop("checked", false);
+	    		}
+	    	});
+	    	
+	    	// body checkbox event
+	    	$("input[name='deleteId']").click(function() {
+	    		let delInpLen = $("input[name='deleteId']").length;
+	    		let delInpChkLen = $("input[name='deleteId']:checked").length;
+	    		
+	    		if (delInpLen == delInpChkLen) {
+	    			$("#chkAll").prop("checked", true);
+	    		} else {
+	    			$("#chkAll").prop("checked", false);
+	    		}
+	    	});
+	    
+			function fnDelete() {
+				let delInpChkLen = $("input[name='deleteId']:checked").length;
+				
+				if (delInpChkLen > 0) {
+					if (confirm("정말 삭제하시겠습니까?")) {
+						let frm = $("#frm");
+						frm.attr("action","/board/delete");
+						frm.attr("method","post");
+						frm.submit();
+					}
+				} else {
+					alert("선택되지 않았습니다.");
+				}
+			}
+		</script>
+	</th:block>
+</html>
