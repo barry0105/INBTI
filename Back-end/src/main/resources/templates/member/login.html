@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/default_layout">
+<th:block layout:fragment="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header">
+                        <h3 class="text-center font-weight-bold my-4">Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="frm" name="frm" action="/login/action" method="post">
+                            <div th:if="${param.error}">
+                                <p th:text="${exception}" class="alert alert-danger"></p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="username" name="username" type="email" placeholder="name@example.com" required />
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="password" name="password" type="password" placeholder="Password" required />
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-input" id="remember-me" name="remember-me" type="checkbox" />
+                                <label class="form-input" for="remember-me">Rememeber password</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Board List</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>글 작성</h1>
+		<form action="/board/write/action" method="post">
+			<div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">제목</label>
+			    <input type="text" class="form-control" id="" name="title">
+			</div>
+			<div class="mb-3">
+		    	<label for="exampleInputPassword1" class="form-label">내용</label>
+		    	<textarea class="form-control" rows="5" cols="" name="content"></textarea>
+			</div>
+			<div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">작성자</label>
+			    <input type="text" class="form-control" id="" name="registerId">
+			</div>
+			<button type="button" class="btn btn-success" onclick="javascript:location.href='/board/list'">이전으로</button>
+			<button type="submit" class="btn btn-primary">작성하기</button>
+		</form>
+	</div>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+</body>
+</html>
