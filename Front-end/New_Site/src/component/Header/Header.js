@@ -10,6 +10,7 @@ function Header(props) {
     const location = window.location;
     var [menubar, visiblemenubar] = useState(false);
     var [helpPopup, visiblehelpPopup] = useState(false);
+    var [valuePopup, changePopup] = useState('궁금한 것을 클릭해보세요 ! ');
     const menu = (
         <div className='menu-wrap'>
             <button onClick={()=>{visiblemenubar(false)}}className='exit'>X</button>
@@ -23,19 +24,24 @@ function Header(props) {
             </ul>
             </div>
     );
+    const boardHelp = (
+        <p>게시판 도움말이지롱</p>
+    );
+    const surveyHelp = (
+        <p>설문조사 도움말이지롱</p>
+    );
     const popupHelp = (
         <div className='help-Popup'>
             <div className='class-Value'>
             <h1>도움말</h1>
             <hr></hr>
             <ul>
-                <li>게시판</li>
-                <li>설문조사</li>
+                <li onClick={()=>{changePopup(boardHelp)}}>게시판</li>
+                <li onClick={()=>{changePopup(surveyHelp)}}>설문조사</li>
             </ul>
             <hr></hr>
-            <p>도움말 이지롱</p>
-            
-            <button onClick={()=>{visiblehelpPopup(false)}}className='exit'>X</button>
+            <p>{valuePopup}</p>
+            <button onClick={()=>{visiblehelpPopup(false)}}className='exit'>나가기</button>
             </div>
             
         </div>

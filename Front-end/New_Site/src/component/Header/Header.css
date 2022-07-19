@@ -123,10 +123,27 @@
 }
 .class-Value li{
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 .class-Value li:hover{
   cursor: pointer;
+  color: blue;
 }
 .class-Value p{
+  height: 80%;
+  display: flex;
   flex: 1;
+}
+.class-Value .exit{
+  width: 30%;
+  font-size: larger;
+  border: 0;
+  background-color:rgb(161, 161, 161);
+}
+.class-Value .exit:hover{
+  cursor: pointer;
+  color: blue;
 }
