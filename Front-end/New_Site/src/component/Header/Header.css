@@ -136,6 +136,8 @@
   height: 80%;
   display: flex;
   flex: 1;
+  text-align: center;
+  width: 100%;
 }
 .class-Value .exit{
   width: 30%;
