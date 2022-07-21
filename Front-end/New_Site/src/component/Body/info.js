@@ -31,7 +31,7 @@ function info(props) {
                             <td>FIREBASE 서버, DB 구축 및 백엔드 개발</td>
                         </tr>
                         <tr>
-                            <td>3학년 통신 1반 14번</td>
+                            <td>3학년 통신 1반 15번</td>
                             <td>전해린</td>
                             <td>서기, 게시판 프론트 및 백엔드 개발</td>
                         </tr>

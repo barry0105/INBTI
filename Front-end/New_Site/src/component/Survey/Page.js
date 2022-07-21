@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import './page.css';
+import Result from '../Result/Result';
 import INFP from '../Result/INFP.js';
 function Page1(props) {
     var [result,AppendingResult] = useState('');
@@ -14,8 +15,8 @@ function Page1(props) {
     const Question = [
         {
             'id' : 0,
-            'Question' : '질문 1',
-            'Answer' : ['대답 1','대답 2'],
+            'Question' : '너는 어떤 사람이라고 생각해?',
+            'Answer' : ['정적인 사람','활발한 사람'],
             'Values' : ['I','E']
         },
         {
@@ -91,27 +92,26 @@ function Page1(props) {
                 )
             );
 
-    let [Page,PageChange] = useState(0);    
+    let [Page,PageChange] = useState(0);  
+    var [ShowPage,VisiblePage] = useState(true);
+    var [ShowResult, VisibleResult] = useState(false);
     const PageSlide = (() =>{
             if(Page < Question.length-1){
                 PageChange(Page+1);
             }
             else{
-                document.write(' I : '+Countresult('I'));
-                document.write(' E : '+Countresult('E'));
-                document.write(' N : '+Countresult('N'));
-                document.write(' S : '+Countresult('S'));
-                document.write(' F : '+Countresult('F'));
-                document.write(' T : '+Countresult('T'));
-                document.write(' P : '+Countresult('P'));
-                document.write(' J : '+Countresult('J'));
+                VisiblePage(false);
+                VisibleResult(true);
+                
             }
             
         });
     return (
         <div className='Background'>
-            {createQuestion[Page]}
+            {ShowPage && createQuestion[Page]}
+            {ShowResult && <Result I={Countresult('I')} E={Countresult('E')} N={Countresult('N')} S={Countresult('S')} F={Countresult('F')} T={Countresult('T')} P={Countresult('P')} J={Countresult('J')}/>}
         </div>
+        
     );
 }
 
