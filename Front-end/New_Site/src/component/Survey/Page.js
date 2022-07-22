@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from 'react';
 import './page.css';
 import Result from '../Result/Result';
-import INFP from '../Result/INFP.js';
+
 function Page1(props) {
     var [result,AppendingResult] = useState('');
     function ResultAppend(Append){

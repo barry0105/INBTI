@@ -1,19 +1,73 @@
-.outcircle{
+.survey-result{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
     position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: 30s;
+    top: -5%;
 }
-.incircle{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 150px;
-    height: 150px;
-    background-color: beige;
-    border-radius: 50%;
+.out-Box{
+    position: relative;
+    width: 400px;
+    height: 120px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.graph{
+    transition: 3s;
+    background-color: antiquewhite;
+    width: 360px;
+    height: 20px;
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    transform: translate(0,-50%);
+    padding: 10px;
+}
+.result-job{
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
+}
+.result-job img{
+    width:390px;
+}
+.result-job p{
+    font-size: larger;
+}
+.result-job .result-name{
+    margin: 10px 0 0 0;
+}
+.result-job .explain-job{
+    width: 350px;
+    border: 1px solid black;
+    padding: 10px;
+    justify-self: flex-end;
+    margin: 10px 0 0 0;
+}
+.etc{
+    border: 1px solid black;
+    width: 400px;
+}
+
+.jobs-supply{
     text-align: center;
-    
+    display: flex;
+}
+.jobs-supply p{
+    margin: 10px 50px 0 50px;
+}
+.jobs-supply .good span{
+    color: blue;
+}
+.jobs-supply .notgood span{
+    color: red;
+}
+.jobs-supply span{
+    font-size: 30px;
 }

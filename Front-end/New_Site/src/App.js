@@ -12,9 +12,15 @@ import Info from './component/Body/info';
 import Survey from './component/Survey/Survey';
 
 function App() {
-  
+  const Warning = (
+    <div className='warning'>
+      <p>지원하지 않는 해상도 입니다.</p>
+      <p>해상도를 변경해주세요.</p>
+    </div>
+  );
   return (
     <div className='wrap'>
+      {Warning}
       <BrowserRouter>
         <Header/>
         <Routes>

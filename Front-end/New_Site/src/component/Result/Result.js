@@ -1,27 +1,71 @@
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import React from 'react';
 import './Result.css';
 function Result(props) {
-    var allScore = props.I + props.N + props.E + props.S;
-    var Dev = props.I + props.N;
-    var UnDev = props.E + props.S;
-    var DevPer = 100 / allScore *Dev;
-    var UnDevPer = 100 / allScore * UnDev;
-    const CreateChart = (range, color)=>{
-        'outcircle'.style.background = "conic-gradient("+color+"0%"+range+"%, beige "+range+"100%)";
-    }
-    
+    var DevAll = props.N + props.T + props.F + props.S + props.J + props.P;
+    var NT = props.N + props.T;
+    var NF = props.N + props.F;
+    var SJ = props.S + props.J;
+    var SP = props.S + props.P;
+    var NTPer = 100 / DevAll * NT;
+    var NFPer = 100 / DevAll * NF;
+    var SJPer = 100 / DevAll * SJ;
+    var SPPer = 100 / DevAll * SP;
     const DevScore = (
         <div className='survey-result'>
-            전체 특성 갯수 = {props.I + props.N + props.E + props.S}
-            <div className='outcircle'>
-                <div className='incircle'>
-                    개발자 특성
+            <div className='status'>
+                <div className='out-Box'>
+                    <p>NT 특성</p>
+                    <p>{NTPer}%</p>
+                    <div className='graph' style={{background: 'linear-gradient(to right, skyblue 0 '+NTPer+'%, beige '+NTPer+'% 100%)'}}>
+                    </div>
+                </div>
+                <div className='out-Box'>
+                    <p>NF 특성</p>
+                    <p>{NFPer}%</p>
+                    <div className='graph' style={{background: 'linear-gradient(to right, lightgreen 0 '+NFPer+'%, beige '+NFPer+'% 100%)'}}>
+                    </div>
+                </div>
+                <div className='out-Box'>
+                    <p>SJ 특성</p>
+                    <p>{SJPer}%</p>
+                    <div className='graph' style={{background: 'linear-gradient(to right, pink 0 '+SJPer+'%, beige '+SJPer+'% 100%)'}}>
+                    </div>
+                </div>
+                <div className='out-Box'>
+                    <p>SP 특성</p>
+                    <p>{SPPer}%</p>
+                    <div className='graph' style={{background: 'linear-gradient(to right, purple 0 '+SPPer+'%, beige '+SPPer+'% 100%)'}}>
+                    </div>
                 </div>
             </div>
-            개발자 퍼센트 = {DevPer}%
-            비개발 퍼센트 = {UnDevPer}%
-            {CreateChart(DevPer, 'purple    ')}
+            <div className='result-job'>
+                <img src='../../img/NoPic.png'></img>
+                <p className='result-name'>유형 이름</p>
+                <div className='explain-job'>
+                    <p>블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
+                    </p>
+                </div>
+                <div className='jobs-supply'>
+                    <div className='good'>
+                        <p>추천 직업</p>
+                        <span>프로그래머</span>
+                    </div>
+                    <div className='notgood'>
+                        <p>비추천 직업</p>
+                        <span>영업</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div className='etc'>
+                기타 기능
+                <div onClick={()=>window.location.replace("/")}><h2>홈으로 </h2></div>
+            </div>
         </div>
     );
     

@@ -4,7 +4,6 @@ function Survey(props) {
     return (
         <>
             <Page/>
-                <div onClick={()=>window.location.replace("/")}><h2>홈으로 </h2></div>
         </>
     );
 }
