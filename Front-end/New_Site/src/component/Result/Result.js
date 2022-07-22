@@ -10,6 +10,8 @@ function Result(props) {
     var NFPer = 100 / DevAll * NF;
     var SJPer = 100 / DevAll * SJ;
     var SPPer = 100 / DevAll * SP;
+    var outSide = 100 / (props.E+props.I) * props.E;
+    var inSide = 100 / (props.E+props.I) * props.I;
     const DevScore = (
         <div className='survey-result'>
             <div className='status'>
@@ -37,6 +39,9 @@ function Result(props) {
                     <div className='graph' style={{background: 'linear-gradient(to right, purple 0 '+SPPer+'%, beige '+SPPer+'% 100%)'}}>
                     </div>
                 </div>
+                Hidden 특성<br/>
+                외향성 : {outSide}<br/>
+                내향성 : {inSide}
             </div>
             <div className='result-job'>
                 <img src='../../img/NoPic.png'></img>
