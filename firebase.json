@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "INBTI/Front-end/New_Site/build/",
     "ignore": [
       "firebase.json",
       "**/.*",
