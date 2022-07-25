@@ -129,7 +129,7 @@ function Result(props) {
             </div>
             <div className='result-job'>
                 <img src='../../img/NoPic.png'></img>
-                <p className='result-name'>유형 : {Return_maxScore()+'형'}</p>
+                <p className='result-name'>성향 : {Return_maxScore()+'형'}</p>
                 <div className='explain-job'>
                     <p>
                     {return_explain(Return_maxScore())}
@@ -145,6 +145,7 @@ function Result(props) {
                         <span>{return_NotGoodJobs(calculStr())}</span>
                     </div>
                     
+
                 </div>
             </div>
             <div className='etc'>
