@@ -26,7 +26,7 @@
  }
  .nav-middle li{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
  }
  .nav-middle a li span:hover{
     color:blue;
@@ -58,7 +58,7 @@
    margin: 20px -10px;
  }
  .menu-wrap ul li{
-   font-size: larger;
+   font-size: 15px;
    text-align: left;
  }
  .menu-wrap ul li:hover{

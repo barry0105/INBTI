@@ -1,3 +1,4 @@
+
 .survey-result{
     display: flex;
     flex-direction: row;
@@ -13,6 +14,7 @@
     background-color: lightgray;
     padding: 10px;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 .graph{
     transition: 3s;
@@ -38,7 +40,8 @@
     width:390px;
 }
 .result-job p{
-    font-size: larger;
+    font-size: 18px;
+    
 }
 .result-job .result-name{
     margin: 10px 0 0 0;
@@ -62,6 +65,12 @@
 .jobs-supply p{
     margin: 10px 50px 0 50px;
 }
+.jobs-supply .good{
+    width: 200px;
+}
+.jobs-supply .notgood{
+    width: 200px;
+}
 .jobs-supply .good span{
     color: blue;
 }
@@ -69,5 +78,5 @@
     color: red;
 }
 .jobs-supply span{
-    font-size: 30px;
+    font-size: 17px;
 }

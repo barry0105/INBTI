@@ -1,13 +1,12 @@
 @font-face {
-  font-family: 'snByulByul';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.6/snByulByul.woff') format('woff');
-  font-weight: normal;
+  font-family: 'MICEGothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
 }
-
 *{
   margin: 0;
-  font-family: 'snByulByul';
+  font-family: MICEGothic Bold;
 }
 html, body{
   margin: 0;
@@ -36,7 +35,7 @@ height: 100%;
   text-align: center;
   flex: 1;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   z-index: 0;
   background-image: url('../public/img/bg.jpg');
   background-repeat: no-repeat;

@@ -22,20 +22,20 @@ function Page1(props) {
         {
             'id' : 1,
             'Question' : '질문 2',
-            'Answer' : ['대답 1','대답 2','대답 3'],
-            'Values' : ['E','I','J']
+            'Answer' : ['대답 1','대답 2'],
+            'Values' : ['N','S']
         },
         {
             'id' : 2,
             'Question' : '질문 3',
             'Answer' : ['대답 1','대답 2'],
-            'Values' : ['E','I']
+            'Values' : ['T','F']
         },
         {
             'id' : 3,
             'Question' : '질문 4',
-            'Answer' : ['대답 1','대답 2','대답 3'],
-            'Values' : ['S','N','F']
+            'Answer' : ['대답 1','대답 2'],
+            'Values' : ['J','P']
         },{
             'id' : 4,
             'Question' : '질문 5',
@@ -45,7 +45,28 @@ function Page1(props) {
             'id' : 5,
             'Question' : '질문 6',
             'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
-            'Values' : ['T','F','J', 'P']
+            'Values' : ['F','S','J', 'P']
+        },{
+            'id' : 6,
+            'Question' : '질문 7',
+            'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
+            'Values' : ['N','T','F', 'S']
+        },{
+            'id' : 7,
+            'Question' : '질문 8',
+            'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
+            'Values' : ['N','T','J', 'P']
+        },
+        {
+            'id' : 8,
+            'Question' : '질문 9',
+            'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
+            'Values' : ['F','T','F', 'T']
+        },{
+            'id' : 9,
+            'Question' : '질문 10',
+            'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
+            'Values' : ['N','S','N', 'S']
         },];
 
         
