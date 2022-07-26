@@ -1,0 +1,53 @@
+.allMBTI-background{
+    display: grid;
+    grid-template-rows: repeat(3,minmax(10px,auto));
+    text-align: center;
+    line-height: 200%;
+    background-color: beige;
+    font-size: 15px;
+}
+.allMBTI-background p{
+    text-align: center;
+}
+.allMBTI-background hr{
+    border: 0;
+    height: 5px;
+    background: #ccc;
+    margin: 10px 0 10px 0;
+    width: 120%;
+}
+.Big-explain{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.I-explain{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.allMBTI-background .good-jobs{
+    color: blue;
+}
+.allMBTI-background .notgood-jobs{
+    color: red;
+}
+.E-explain{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.explain{
+    text-align: left;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 3px 10px 3px 10px;
+    background-color: white;
+}
+.homeBT{
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.homeBT:hover{
+    cursor: url('../../../public/img/cursor_click.png'), auto;
+    background-color: #cba;
+}

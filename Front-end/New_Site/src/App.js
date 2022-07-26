@@ -10,7 +10,7 @@ import NotFound from './component/NotFound';
 import Tosurvey from './component/Body/Tosurvey';
 import Info from './component/Body/info';
 import Survey from './component/Survey/Survey';
-
+import Explain from './component/MBTI-explain/ExplainPage';
 function App() {
   const Warning = (
     <div className='warning'>
@@ -30,6 +30,7 @@ function App() {
           <Route path="/info" element={<Info/>}></Route>
           <Route path='*' element={<NotFound/>}></Route>
           <Route path="/Survey" element={<Survey/>}></Route>
+          <Route path='/Explain' element={<Explain/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>

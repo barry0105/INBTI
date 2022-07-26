@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     width: 400px;
     padding: 10px;
 }
@@ -54,7 +53,9 @@
     margin: 10px 0 0 0;
 }
 .etc{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 400px;
 }
 
@@ -79,4 +80,28 @@
 }
 .jobs-supply span{
     font-size: 17px;
+}
+
+.toBT{
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+.toBT h2{
+    padding: 10px 0 10px 0;
+    color:slateblue;
+    z-index: -1;
+    border-radius: 10px 10px 10px 10px;
+}
+.toBT h2:hover{
+    cursor: url('../../../public/img/cursor_click.png'), auto;
+    background-color: lightgray;
+}
+.fighting{
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 7px 7px 7px 7px;
+    margin: 10px 0 10px 0;
 }

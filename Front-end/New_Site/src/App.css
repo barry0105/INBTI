@@ -5,10 +5,17 @@
   font-style: normal;
 }
 *{
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  cursor: url('../public/img/cursor_normalsmall.png'), auto;
   margin: 0;
   font-family: MICEGothic Bold;
 }
 html, body{
+  
   margin: 0;
   height: 100%;
   display: flex;

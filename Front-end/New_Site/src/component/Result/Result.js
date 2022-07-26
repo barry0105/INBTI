@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Result.css';
+import { Link } from 'react-router-dom';
 function Result(props) {
     var DevAll = props.N + props.T + props.F + props.S + props.J + props.P;
     var NT = props.N + props.T;
@@ -97,6 +98,7 @@ function Result(props) {
         }
     }
     const DevScore = (
+        
         <div className='survey-result'>
             <div className='status'>
                 <div className='out-Box'>
@@ -123,9 +125,6 @@ function Result(props) {
                     <div className='graph' style={{background: 'linear-gradient(to right, purple 0 '+SPPer+'%, beige '+SPPer+'% 100%)'}}>
                     </div>
                 </div>
-                Hidden 특성<br/>
-                외향성 : {outSide}<br/>
-                내향성 : {inSide}
             </div>
             <div className='result-job'>
                 <img src='../../img/NoPic.png'></img>
@@ -149,8 +148,12 @@ function Result(props) {
                 </div>
             </div>
             <div className='etc'>
-                기타 기능
-                <div onClick={()=>window.location.replace("/")}><h2>홈으로 </h2></div>
+            <h2>페이지 종료시 다시 돌아올 수 없습니다.</h2>
+                <div onClick={()=>window.location.replace("/") } className='toBT'><h2>홈으로</h2></div>
+                <Link to='/Explain' style={{textDecoration: 'none'} }><div className='toBT'><h2>전체 유형 보기</h2></div></Link>
+                <div onClick={()=>window.location.replace("https://www.jobplanet.co.kr/job") } className='toBT'><h2>잡플래닛 공고 보러가기</h2></div>
+                <div onClick={()=>window.location.replace("/board") } className='toBT'><h2>게시판 이동하기 </h2></div>
+                <div className='fighting'>결과에 너무 신경쓰지 마세요 ! <br/> 당신의 노력과 열정만 있다면 무엇이든지 해낼수 있어요 !</div>
             </div>
         </div>
     );
