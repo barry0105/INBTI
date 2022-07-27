@@ -74,7 +74,7 @@ function Header(props) {
     return (
         
     
-        location.pathname !=='/Survey' &&
+        location.pathname !=='/Survey' && location.pathname !== '/Explain' &&
         <>
             <div className='nav'>
             <ul>

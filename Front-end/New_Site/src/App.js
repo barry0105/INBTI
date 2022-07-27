@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Header from './component/Header/Header';
@@ -11,7 +11,9 @@ import Tosurvey from './component/Body/Tosurvey';
 import Info from './component/Body/info';
 import Survey from './component/Survey/Survey';
 import Explain from './component/MBTI-explain/ExplainPage';
+import {firestore} from './firebase'
 function App() {
+ 
   const Warning = (
     <div className='warning'>
       <p>지원하지 않는 해상도 입니다.</p>

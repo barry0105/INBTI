@@ -73,7 +73,7 @@ height: 100%;
 }
 
 .warning{
-  z-index: 10px;
+  z-index: 10;
   position: absolute;
   text-align: center;
   font-size: 80px;
@@ -98,6 +98,9 @@ height: 100%;
   .footer{
     display: none;
   }
+  .middle-board{
+    display: none;
+  }
 }
 @media screen and (max-width: 1300px){
   .warning{
@@ -110,6 +113,9 @@ height: 100%;
     display: none;
   }
   .footer{
+    display: none;
+  }
+  .middle-board{
     display: none;
   }
 }

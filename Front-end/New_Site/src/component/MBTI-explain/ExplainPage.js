@@ -125,7 +125,6 @@ function ExplainPage(props) {
                     </div>
                 </div>
             </div>
-            <div className='homeBT' onClick={()=> window.location.replace('/')}>홈으로</div>
         </div>
     );
 }

@@ -105,3 +105,12 @@
     border-radius: 7px 7px 7px 7px;
     margin: 10px 0 10px 0;
 }
+
+.Same{
+    background-color: white;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    border: 1px solid purple;
+    border-radius: 7px 7px 7px 7px;
+    margin: 10px 0 10px 0;
+}

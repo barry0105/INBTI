@@ -30,16 +30,16 @@
  }
  .nav-middle a li span:hover{
     color:blue;
-    cursor: pointer;
+    cursor: url('../../../public/img/cursor_click.png'), auto;
  }
  .menuBar{
    font-size: 25px;
  }
  .menuBar:hover{
-   cursor: pointer;
+   cursor: url('../../../public/img/cursor_click.png'), auto;
  }
  .menu-wrap {
-   z-index: 9;
+   z-index: 9;  
    display: flex;
    position: fixed;
    right: 0px;
@@ -62,7 +62,7 @@
    text-align: left;
  }
  .menu-wrap ul li:hover{
-   cursor: pointer;
+   cursor: url('../../../public/img/cursor_click.png'), auto;
    color: blue;
  }
  .menu-wrap .copyright{
@@ -77,7 +77,7 @@
    line-height: 100%;
  }
  .menu-wrap .copyright:hover{
-  cursor: default;
+  cursor: url('../../../public/img/cursor_click.png'), auto;
   color: black;
  }
  .menu-wrap .exit{
@@ -91,7 +91,7 @@
    height: 30px;
  }
  .menu-wrap .exit:hover{
-   cursor: pointer;
+   cursor: url('../../../public/img/cursor_click.png'), auto;
    background-color: rgb(192, 192, 192);
  }
 .help-Popup{
@@ -129,7 +129,7 @@
 
 }
 .class-Value li:hover{
-  cursor: pointer;
+  cursor: url('../../../public/img/cursor_click.png'), auto;
   color: blue;
 }
 .class-Value p{
@@ -146,6 +146,6 @@
   background-color:rgb(161, 161, 161);
 }
 .class-Value .exit:hover{
-  cursor: pointer;
+  cursor: url('../../../public/img/cursor_click.png'), auto;
   color: blue;
 }

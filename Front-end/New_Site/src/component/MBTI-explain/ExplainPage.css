@@ -5,6 +5,7 @@
     line-height: 200%;
     background-color: beige;
     font-size: 15px;
+    overflow:visible
 }
 .allMBTI-background p{
     text-align: center;
@@ -14,7 +15,7 @@
     height: 5px;
     background: #ccc;
     margin: 10px 0 10px 0;
-    width: 120%;
+    width: 100%;
 }
 .Big-explain{
     display: grid;
