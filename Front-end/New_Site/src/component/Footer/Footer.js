@@ -1,12 +1,12 @@
 import React from 'react';
-
+import './Footer.css';
 function Footer(props) {
     const location = window.location;
     return (
 
         location.pathname !=='/Survey' && location.pathname !== '/Explain' &&
         <div className='footer'>
-           <div className='Text'>Footer 내용 생각중</div>
+           <div className='footerOnLogo'><img src="../../../img/title.png"></img><p>INBTI</p></div>
         </div>
     );
 }

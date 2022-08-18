@@ -76,6 +76,7 @@ function Header(props) {
     
         location.pathname !=='/Survey' && location.pathname !== '/Explain' &&
         <>
+            
             <div className='nav'>
             <ul>
             <Link to="/"><li><img src="img/LOGO.png" alt="로고"/></li></Link>

@@ -1,72 +1,69 @@
 .wrap{
     background-color:beige;
 }
-.Background{
-    position: absolute;
-    background-color: beige;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    height: 550px;
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: visible;
-}
 .Question{
-    flex: 1;
-    margin: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;       
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.Question img{
-    width: 410px;
-    margin-bottom: 10px;
+    
 }
 .survey-wrap{
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    width: 90%;
     align-items: center;
 }
-.Background hr{
-    width: 90%;
-    margin-bottom: 10px;
-    color: white;
-}
 .survey-unit{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    width: 60%;
     margin: 5px;
     z-index: 5;
     border: 2px solid green;
     cursor: url('../../../public/img/cursor_click.png'), auto;
     font-size:20px;
-    border-radius: 10px 10px 10px 10px;
     background-color: beige;
 }
 .survey-unit:hover {
     cursor: url('../../../public/img/cursor_click.png'), auto;
     background-color: burlywood;
 }
-.survey-unit p{
-    margin: 10px;
-
+.survey-unit label{
+    cursor: url('../../../public/img/cursor_click.png'), auto;
+    background-color: burlywood;
 }
 .survey-unit input[type="radio"]{
     display: none;
 }
-.survey-unit label{
-    width: 100%;
-    z-index: 1;
+.survey-unit p{
+    margin: 10px;
+
 }
-.survey-unit label:hover{
-    cursor: url('../../../public/img/cursor_click.png'), auto;
-    border-radius: 10px 10px 10px 10px;
-    background-color: burlywood;
+
+@media all and (min-width: 1024px){
+    /*데스크탑*/
+    .Question{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .Question img{
+        width: 70%;
+        margin-bottom: 10px;
+    }
 }
+@media all and (max-width: 768px){
+/*모바일*/
+.Question{
+    position: absolute;
+
+}
+.Question img{
+    width: 70%;
+}
+}
+
+
