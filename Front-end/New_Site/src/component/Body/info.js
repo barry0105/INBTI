@@ -10,6 +10,7 @@ function info(props) {
                 <li>팀원 : 김규진, 김채은, 방주현, 전해린</li>
                 <li>
                     <table border={1} width={500} >
+                        <tbody>
                         <tr>
                             <td>학번</td>
                             <td>이름</td>
@@ -35,6 +36,8 @@ function info(props) {
                             <td>전해린</td>
                             <td>서기, 게시판 프론트 및 백엔드 개발</td>
                         </tr>
+                        </tbody>
+                        
                     </table>
                 </li>
             </ul>
