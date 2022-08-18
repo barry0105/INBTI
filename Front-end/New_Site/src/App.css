@@ -46,7 +46,7 @@ height: 100%;
   z-index: 0;
   background-image: url('../public/img/bg.jpg');
   background-repeat: no-repeat;
-  background-size:contain ;
+  background-size:cover;
 }
 .Home .Text{
   position: relative;
@@ -84,38 +84,4 @@ height: 100%;
 }
 .warning p{
   color: red;
-}
-@media screen and (min-width: 1400px){
-  .warning{
-    display: block;
-  }
-  .nav{
-    display: none;
-  }
-  .Home{
-    display: none;
-  }
-  .footer{
-    display: none;
-  }
-  .middle-board{
-    display: none;
-  }
-}
-@media screen and (max-width: 1300px){
-  .warning{
-    display: block;
-  }
-  .nav{
-    display: none;
-  }
-  .Home{
-    display: none;
-  }
-  .footer{
-    display: none;
-  }
-  .middle-board{
-    display: none;
-  }
 }

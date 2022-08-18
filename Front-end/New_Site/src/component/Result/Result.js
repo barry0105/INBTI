@@ -16,31 +16,21 @@ function Result(props) {
     var SPPer = Math.ceil(100 / DevAll * SP);
     var outSide = Math.ceil(100 / (props.E+props.I) * props.E);
     var inSide = Math.ceil(100 / (props.E+props.I) * props.I);
-    var [RINT, INTSET] = useState(0);
-    var [RINF, INFSET] = useState(0);
-    var [RISJ, ISJSET] = useState(0);
-    var [RISP, ISPSET] = useState(0);
-    var [RENT, ENTSET] = useState(0);
-    var [RENF, ENFSET] = useState(0);
-    var [RESJ, ESJSET] = useState(0);
-    var [RESP, ESPSET] = useState(0);
+    var [ResultPer,SetResultPer] = useState();
+    useEffect(()=>{
+        reNewData();
+        console.log("재렌더링 됨");
+    },[]);
     function reNewData(){
         const coll = firestore.collection("Result-Type");
         coll.doc("z7LIP4EUhYCqKnjRqYV7").get().then((doc) => {
-            INTSET(doc.data().INT);
-            INFSET(doc.data().INF);
-            ISJSET(doc.data().ISJ);
-            ISPSET(doc.data().ISP);
-            ENTSET(doc.data().ENT);
-            ENFSET(doc.data().ENF);
-            ESJSET(doc.data().ESJ);
-            ESPSET(doc.data().ESP);
+            Cgdata(calculStr(),(doc.data()[calculStr()])+1);
+            SetResultPer((doc.data()[calculStr()])+1);
         });
     }
     function Cgdata(tp, num){
         const coll = firestore.collection("Result-Type");
         coll.doc('z7LIP4EUhYCqKnjRqYV7').update(tp,num);
-        reNewData();
     }
     function EorI(){
         if(outSide > inSide){
@@ -126,35 +116,7 @@ function Result(props) {
             return '모험을 즐기고 자유를 좋아하는 SP 유형은 경험을 중시하고 모험을 즐기는 경향이 있습니다. 덕분에 갑작스러운 위기상황에 가장 잘 대처하는 유형이기도 합니다. 새로운 것을 선호하고 낙천적이며 쾌활한 성격이 많고, 창조적인 경향을 지닌 사람들도 있습니다. SP형은 평등하고 관용적인 태도로 타인을 대하는 편입니다.'
         }
     }
-    function count_num(inner){
-        if(inner==='INF'){
-            return RINF;
-        }
-        if(inner==='INT'){
-            return RINT;
-        }
-        if(inner==='ISJ'){
-            return RISJ;
-        }
-        if(inner==='ISP'){
-            return RISP;
-        }
-        if(inner==='ENF'){
-            return RENF;
-        }
-        if(inner==='ENT'){
-            return RENT;
-        }
-        if(inner==='ESJ'){
-            return RESJ;
-        }
-        if(inner==='ESP'){
-            return RESP;
-        }
-    }
-    function plusData(){
-        Cgdata(calculStr(),count_num(calculStr())+1)
-    }
+    
     const DevScore = (
         
         <div className='survey-result'>
@@ -206,8 +168,7 @@ function Result(props) {
                 </div>
             </div>
             <div className='etc'>
-                {()=> plusData()}
-                <div className='Same'>같은 유형의 사람들이 {count_num(calculStr)}명 있어요 !</div>
+                <div className='Same'>같은 유형의 사람들이 {ResultPer}명 있어요 !</div>
                 <div onClick={()=>window.location.replace("/") } className='toBT'><h2>홈으로</h2></div>
                 <Link to='/Explain' target={"_blank"} style={{textDecoration: 'none'} }><div className='toBT'><h2>전체 유형 보기</h2></div></Link>
                 <div onClick={()=>window.location.replace("https://www.jobplanet.co.kr/job") } className='toBT'><h2>잡플래닛 공고 보러가기</h2></div>

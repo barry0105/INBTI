@@ -7,9 +7,6 @@
     text-align: center;
     position: relative;
     width: 100%;
-    background-image: url('../../../public/img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size:contain;
 }
 .middle-board img{
     width: 20rem;
