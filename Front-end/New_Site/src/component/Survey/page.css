@@ -1,6 +1,10 @@
 .wrap{
     background-color:beige;
 }
+.Background{
+    display: flex;
+    flex: 1;
+}
 .Question{
     text-align: center;       
     display: flex;
@@ -57,12 +61,20 @@
 }
 @media all and (max-width: 768px){
 /*모바일*/
-.Question{
-    position: absolute;
+.Question{  
+    height: 85%;
+    align-self: flex-end;
+    justify-content:flex-start;
 
 }
 .Question img{
-    width: 70%;
+    width: 90%;
+}
+.Question h2{
+    margin-top: 10%;
+}
+.survey-wrap{
+    margin-top: 30%;
 }
 }
 

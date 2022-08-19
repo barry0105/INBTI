@@ -6,6 +6,7 @@
     align-content: space-between;
     position: relative;
     margin:15px;
+    width: 100%;
 }
 .out-Box{
     position: relative;

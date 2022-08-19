@@ -13,27 +13,27 @@
   .nav li{
     text-align: center;
     list-style: none; 
-    margin: 20px;
+    margin: 1vw;
   }
  .nav li img{
     justify-self: left;
-    height: 70px;
+    height: 5vw;
  }
  .nav-middle{
     display: flex;
     flex: 1;
-    
  }
  .nav-middle li{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2vw;
  }
  .nav-middle a li span:hover{
     color:blue;
     cursor: url('../../../public/img/cursor_click.png'), auto;
  }
  .menuBar{
-   font-size: 25px;
+   font-size: 2vw;
+   z-index: 4;
  }
  .menuBar:hover{
    cursor: url('../../../public/img/cursor_click.png'), auto;
@@ -49,7 +49,7 @@
    
  }
  .menu-wrap ul{
-   line-height: 250%;
+   line-height: 3vw;
    list-style: none;
    display: flex;
    flex-direction: column;
@@ -58,7 +58,7 @@
    margin: 20px -10px;
  }
  .menu-wrap ul li{
-   font-size: 15px;
+   font-size: 1vw;
    text-align: left;
  }
  .menu-wrap ul li:hover{
@@ -73,7 +73,7 @@
    position: fixed;
    right: 10px;
    bottom: 10px;
-   font-size: 10px;
+   font-size: 0.5vw;
    line-height: 100%;
  }
  .menu-wrap .copyright:hover{

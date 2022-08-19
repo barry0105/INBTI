@@ -83,11 +83,11 @@ function Header(props) {
                 <div className='nav-middle'>
                     <Link to="/" style={{textDecoration: 'none', color: 'black'}}><li><span>홈</span></li></Link>
                     <Link to='/ToBoard'  style={{textDecoration: 'none', color: 'black'}}><li><span>게시판</span></li></Link>
-                    <Link to='/ToSurvey'  style={{textDecoration: 'none', color: 'black'} }><li><span>설문조사</span></li></Link>
+                    <Link to='/ToSurvey'  style={{textDecoration: 'none', color: 'black'} }><li><span>성향검사</span></li></Link>
                     <Link to='/info'  style={{textDecoration: 'none', color: 'black'}}><li><span>정보</span></li></Link>
                 </div>
                 
-                <li onClick={()=>{visiblemenubar(true)}}><FontAwesomeIcon icon={faBars} className="menuBar" /></li>
+                <li className="menuBar" onClick={()=>{visiblemenubar(true)}}><FontAwesomeIcon icon={faBars}/></li>
             </ul>
             </div>
             {menubar&&menu}

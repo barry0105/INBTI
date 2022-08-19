@@ -9,16 +9,18 @@
     width: 100%;
 }
 .middle-board img{
-    width: 20rem;
+    width: 23vw;
     padding: 30px;
 }
 .middle-board img:hover{
     cursor: pointer;
 }
 .middle-board .survey{
-    width: 14rem;
+    width: 14vw;
 }
-
+.middle-board .Text{
+    font-size: 2vw;
+}
 .info{
     display: flex;
     flex: 1;

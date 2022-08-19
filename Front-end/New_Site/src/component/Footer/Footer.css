@@ -1,5 +1,53 @@
-.footerOnLogo img{
-    width: 30px;
-    margin: 10px;
-    
+.footer{
+    display: flex;
+    justify-content: flex-start;
 }
+.footerOnLogo img{
+    width: auto;
+    height: auto;
+}
+.footerOnLogo{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    font-size: 1vw;
+}
+.footerOnLogo .ment{
+    display: flex;
+    font-size: 3vw;
+    color:brown;
+}
+.footer-Banner{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.swipe{
+    display: flex;
+    font-size: 2vw;
+    color: brown;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.swiper{
+    left: -10%;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+.swiper-pagination{
+    display: none;
+}
+.swiper-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+.swiper-slide{
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+

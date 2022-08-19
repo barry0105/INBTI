@@ -1,7 +1,7 @@
 import React from 'react';
 function NotFound(props) {
     return (
-        <div>
+        <div className='NotFound-wrap'>
             <h1 className='NotFound'>잘못된 페이지 주소 입니다.</h1>
         </div>
     );
