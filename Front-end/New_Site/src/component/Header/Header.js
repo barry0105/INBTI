@@ -1,13 +1,14 @@
 import React,{useState} from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faL } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
 
 
 function Header(props) {
     const location = window.location;
+    var [setting, visiblesetting] = useState(false);
     var [menubar, visiblemenubar] = useState(false);
     var [helpPopup, visiblehelpPopup] = useState(false);
     var [valuePopup, changePopup] = useState('궁금한 것을 클릭해보세요 ! ');
@@ -16,7 +17,7 @@ function Header(props) {
             <button onClick={()=>{visiblemenubar(false)}}className='exit'>X</button>
             <ul>
                 <li onClick={()=> {visiblehelpPopup(true)}}>도움말</li>
-                <li>설정</li>
+                <li onClick={()=> {visiblesetting(true)}}>설정</li>
                 <li onClick={()=> window.open('http://intec.icehs.kr/main.do', '_blank')}>학교 홈페이지</li>
                 <li onClick={()=> window.open('https://github.com/barry0105/INBTI','_blank')}>Github</li>
                 <li onClick={()=>window.open('https://season-bacon-1ce.notion.site/8aa9318171f34aca85e80faea98f4001?v=3c78b9af3f6c42e0ac0e6c5c9263a6f5', '_blank')}>Notion</li>
@@ -24,6 +25,35 @@ function Header(props) {
             </ul>
             </div>
     );
+    const settingPopup = (
+        <div className='Popup'>
+            <div className='Setting-Popup'>
+                <h1>설정</h1>
+                <hr/>
+                <ul>
+                    <li>
+                    <div className='settingToggle'>
+                        <h4>설정 1</h4>
+                        <input type="checkbox" id="toggle1" class="toggle" hidden/>
+                        <label for="toggle1" class="toggleSwitch">
+                        <span class="toggleButton"></span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div className='settingToggle'>
+                        <h4>설정 2</h4>
+                        <input type="checkbox" id="toggle2" class="toggle" hidden/>
+                        <label for="toggle2" class="toggleSwitch">
+                        <span class="toggleButton"></span>
+                        </label>
+                    </div>
+                    </li>
+                    <li className='Exit' onClick={()=>{visiblesetting(false)}}>나가기</li>
+                </ul>
+            </div>
+        </div>
+    )
     const boardHelp = (
         <p>
         친구는 세월의 도둑이다.
@@ -56,7 +86,7 @@ function Header(props) {
         인내심을 가지고 그들을 대하라.</p>
     );
     const popupHelp = (
-        <div className='help-Popup'>
+        <div className='Popup'>
             <div className='class-Value'>
             <h1>도움말</h1>
             <hr></hr>
@@ -92,6 +122,7 @@ function Header(props) {
             </div>
             {menubar&&menu}
             {helpPopup&&popupHelp}
+            {setting&&settingPopup}
             </>
     );
     

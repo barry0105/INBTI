@@ -29,6 +29,9 @@ function Slide(props) {
                 <SwiperSlide>사람은 죽어서 이름을 남기고 치킨은 죽어서 뼈를 남긴다.</SwiperSlide>
                 <SwiperSlide>사공이 많으면 배가 빨리간다.</SwiperSlide>
                 <SwiperSlide>오르지 못할 나무는 사다리를 타고 오르도록 하자.</SwiperSlide>
+                <SwiperSlide>형광등 위가 어둡다.</SwiperSlide>
+                <SwiperSlide>가다가 중지하면 간만큼 이득이다.</SwiperSlide>
+                <SwiperSlide>식당개 삼년이면 라면을 끓인다.</SwiperSlide>
             </Swiper>
     </div>
     );
