@@ -12,18 +12,20 @@ function Page1(props) {
         let Count = result.split(e).length - 1;
         return Count;
     }
+
+    /*질문 응답*/
     const Question = [
         {
-            'id' : 0,
-            'Question' : '너는 어떤 사람이라고 생각해?',
-            'Answer' : ['정적인 사람','활발한 사람'],
-            'Values' : ['I','E']
+            'id' : 0, /* 문제 고유 번호 ※중복 금지  */
+            'Question' : '질문', /* 질문 입력하는 곳 */
+            'Answer' : ['대답 1','대답 2'], /* 질문에 대한 응답 입력 왼쪽부터 위 */
+            'Values' : ['I','E'] /* 각 대답 별 성향 입력 왼쪽부터 1번 (I, E | S, N | T, F | J, P) */
         },
-        {
+        { /* 모두 동일 새로 형식만 맞춰서 추가 바람 */
             'id' : 1,
             'Question' : '질문 2',
             'Answer' : ['대답 1','대답 2'],
-            'Values' : ['N','S']
+            'Values' : ['E','I']
         },
         {
             'id' : 2,

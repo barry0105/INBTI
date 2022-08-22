@@ -8,7 +8,7 @@
 }
 .footerOnLogo{
     display: flex;
-    width: 100%;
+    width: fit-content;
     text-align: left;
     font-size: 1vw;
 }
@@ -32,10 +32,9 @@
     user-select:none;
 }
 .swiper{
-    left: -10%;
+    position: absolute;
+    left: -23.5%;
     display: flex;
-    align-items: flex-start;
-    justify-items: flex-start;
 }
 .swiper-pagination{
     display: none;

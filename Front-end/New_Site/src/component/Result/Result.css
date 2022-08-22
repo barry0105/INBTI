@@ -140,6 +140,9 @@
     .result-job .jobs-supply{
         width: 95%;
     }
+    .Background{
+        overflow: scroll;
+    }
     .survey-result{
         flex-direction: column;
         overflow: scroll;
