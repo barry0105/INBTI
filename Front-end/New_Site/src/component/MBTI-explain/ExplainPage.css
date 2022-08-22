@@ -1,11 +1,11 @@
 .allMBTI-background{
     display: grid;
-    grid-template-rows: repeat(3,minmax(10px,auto));
+    grid-template-rows: repeat(5,minmax(10px,auto));
     text-align: center;
     line-height: 200%;
     background-color: beige;
     font-size: 15px;
-    overflow:visible
+    overflow-y: scroll !important;
 }
 .allMBTI-background p{
     text-align: center;

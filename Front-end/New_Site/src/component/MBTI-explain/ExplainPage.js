@@ -31,7 +31,7 @@ function ExplainPage(props) {
                         모험을 즐기고 자유를 좋아하는 SP 유형은 경험을 중시하고 모험을 즐기는 경향이 있습니다. 덕분에 갑작스러운 위기상황에 가장 잘 대처하는 유형이기도 합니다. 새로운 것을 선호하고 낙천적이며 쾌활한 성격이 많고, 창조적인 경향을 지닌 사람들도 있습니다. SP형은 평등하고 관용적인 태도로 타인을 대하는 편입니다.
                         </div>
                     </div>
-            </div>
+            
             <h2>추천 직업</h2>
             <hr/>
             <div className='I-explain'>
@@ -125,6 +125,7 @@ function ExplainPage(props) {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
