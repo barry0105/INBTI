@@ -92,7 +92,7 @@ function Header(props) {
             <hr></hr>
             <ul>
                 <li onClick={()=>{changePopup(boardHelp)}}>게시판</li>
-                <li onClick={()=>{changePopup(surveyHelp)}}>설문조사</li>
+                <li onClick={()=>{changePopup(surveyHelp)}}>성향검사</li>
             </ul>
             <hr></hr>
             <p>{valuePopup}</p>

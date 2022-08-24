@@ -1,6 +1,7 @@
 .footer{
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
 }
 .footerOnLogo img{
     width: auto;
@@ -17,6 +18,9 @@
     font-size: 3vw;
     color:brown;
 }
+.footerOnLogo h2{
+    margin-left: 5px;
+}
 .footer-Banner{
     display: flex;
     flex-direction: column;
@@ -30,23 +34,11 @@
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    width: 100%;
 }
 .swiper{
-    position: absolute;
-    left: -23.5%;
     display: flex;
 }
 .swiper-pagination{
     display: none;
 }
-.swiper-wrapper{
-    display: flex;
-    align-items: flex-start;
-    justify-items: flex-start;
-}
-.swiper-slide{
-    display: flex;
-    align-items: flex-start;
-    justify-items: flex-start;
-}
-

@@ -4,6 +4,9 @@
   font-weight: 700;
   font-style: normal;
 }
+::-webkit-scrollbar-thumb:hover { 
+  cursor: url('../public/img/cursor_normalsmall.png'), auto;
+}
 *{
   -webkit-touch-callout: none;
   user-select: none;
@@ -14,43 +17,46 @@
   margin: 0;
   font-family: MICEGothic Bold;
 }
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+  cursor: url('../public/img/cursor_normalsmall.png'), auto;
+}
 html, body{
-  margin: 0;
   height: 100%;
-  display: flex;
-  flex-flow: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 #root{
-display: flex;
-flex-direction: column;
-height: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .wrap{
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  
 }
 .Text{
   color: gray;
   align-self: center;
 }
 .Home{
+  width: 100%;
   z-index: 5;
   display: flex;
   text-align: center;
   flex: 1;
   justify-content: center;
   font-size: 3vw;
-  z-index: 0;
   background-image: url('../public/img/bg.jpg');
   background-repeat: no-repeat;
   background-size:cover;
-}
-.Home .Text{
-  position: relative;
-
 }
 .middle-board{
   flex: 1;

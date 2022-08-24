@@ -9,7 +9,7 @@ function Footer(props) {
         <div className='footer'>
            <div className='footerOnLogo'><img src="../../../img/title.png"></img>
                 <div className='footer-Banner'>
-                INBTI
+                <h2>INBTI</h2>
                 {<Slide/>}
                 </div>
            </div>
