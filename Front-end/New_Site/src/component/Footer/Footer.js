@@ -9,7 +9,7 @@ function Footer(props) {
         <div className='footer'>
            <div className='footerOnLogo'><img src="../../../img/title.png"></img>
                 <div className='footer-Banner'>
-                <h2>INBTI</h2>
+                <h2>INBTI - 인생에 도움을 주는 명언들</h2>
                 {<Slide/>}
                 </div>
            </div>

@@ -26,16 +26,16 @@
     margin: 5px;
     z-index: 5;
     border: 2px solid green;
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
     font-size:20px;
     background-color: beige;
 }
 .survey-unit:hover {
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
     background-color: burlywood;
 }
 .survey-unit label{
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
     background-color: burlywood;
 }
 .survey-unit input[type="radio"]{

@@ -4,29 +4,22 @@
   font-weight: 700;
   font-style: normal;
 }
-::-webkit-scrollbar-thumb:hover { 
-  cursor: url('../public/img/cursor_normalsmall.png'), auto;
-}
 *{
   -webkit-touch-callout: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-  cursor: url('../public/img/cursor_normalsmall.png'), auto;
+  cursor: url('../public/img/cursor_normalsmall.png'),auto;
   margin: 0;
   font-family: MICEGothic Bold;
-}
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none;
-  cursor: url('../public/img/cursor_normalsmall.png'), auto;
 }
 html, body{
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 #root{
   height: 100%;

@@ -49,6 +49,6 @@
     border-radius: 10px 10px 10px 10px;
 }
 .homeBT:hover{
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
     background-color: #cba;
 }

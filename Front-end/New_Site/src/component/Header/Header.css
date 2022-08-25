@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: url('../../../public/img/cursor_deFault.cur'), auto;
   }
   .nav li{
     text-align: center;
@@ -29,20 +30,14 @@
  }
  .nav-middle a li span:hover{
     color:blue;
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
  }
  .menuBar{
    font-size: 2vw;
    z-index: 4;
  }
- .menuBar:hover{
-   cursor: url('../../../public/img/cursor_click.png'), auto;
- }
- .menuBar svg{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
-}
-.menuBar svg path{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+ .menuBar *:hover{
+  cursor: pointer;
 }
  .menu-wrap {
    z-index: 9;  
@@ -68,7 +63,7 @@
    text-align: left;
  }
  .menu-wrap ul li:hover{
-   cursor: url('../../../public/img/cursor_click.png'), auto;
+   cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
    color: blue;
  }
  .menu-wrap .copyright{
@@ -83,7 +78,7 @@
    line-height: 100%;
  }
  .menu-wrap .copyright:hover{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
   color: black;
  }
  .menu-wrap .exit{
@@ -98,7 +93,7 @@
    height: 30px;
  }
  .menu-wrap .exit:hover{
-   cursor: url('../../../public/img/cursor_click.png'), auto;
+   cursor: pointer;
    background-color: rgb(192, 192, 192);
  }
 .Popup{
@@ -136,7 +131,7 @@
 
 }
 .class-Value li:hover{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
   color: blue;
 }
 .class-Value p{
@@ -153,7 +148,7 @@
   background-color:rgb(161, 161, 161);
 }
 .class-Value .exit:hover{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
   color: blue;
 }
 
@@ -181,7 +176,8 @@
   padding: 0 10px 0 10px;
 }
 .Setting-Popup .Exit:hover{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
+  color: blue;
 }
 .settingToggle{
   width: fit-content;
@@ -201,10 +197,10 @@
   position: relative;
   border-radius: 2rem;
   background-color: gray;
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
 }
 .toggleSwitch .toggleButton{
-  cursor: url('../../../public/img/cursor_click.png'), auto;
+  cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
 }
 .toggleSwitch .toggleButton {
   width: 1.3rem;

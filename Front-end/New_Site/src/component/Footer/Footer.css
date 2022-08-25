@@ -28,7 +28,7 @@
 }
 .swipe{
     display: flex;
-    font-size: 2vw;
+    font-size: 3vw;
     color: brown;
     -webkit-user-select:none;
     -moz-user-select:none;
