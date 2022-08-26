@@ -1,7 +1,8 @@
 import React, { useReducer, useState } from 'react';
 import './page.css';
 import Result from '../Result/Result';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 function Page1(props) {
     var [result,AppendingResult] = useState('');
     function ResultAppend(Append){
@@ -132,6 +133,7 @@ function Page1(props) {
     return (
         <div className='Background'>
             {ShowPage && createQuestion[Page]}
+            {!ShowResult && <h1 className="surveyToHome" onClick={()=>window.confirm("정말로 이동하시겠습니까?\n진행내역이 저장되지 않습니다.")?window.location.replace('/'):console.log('')}><FontAwesomeIcon icon={faHouseChimney} /></h1>}
             {ShowResult && <Result I={Countresult('I')} E={Countresult('E')} N={Countresult('N')} S={Countresult('S')} F={Countresult('F')} T={Countresult('T')} P={Countresult('P')} J={Countresult('J')}/>}
         </div>
         

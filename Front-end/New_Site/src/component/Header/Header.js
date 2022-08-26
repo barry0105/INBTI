@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faL } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
 
