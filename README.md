@@ -20,7 +20,7 @@ MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 <hr>
 <h3>Tech Stack 🛠️<h3>
 <a href="https://namu.wiki/w/JavaScript"><img src="https://img.shields.io/badge/JavaScript-black?style=flat&logo=JavaScript&logoColor=F7DF1E"/></a>
-<a href="https://namu.wiki/w/Python"><img src="https://img.shields.io/badge/Python-black?style=flat&logo=Python&logoColor=3776AB"/></a>
+<a href="https://namu.wiki/w/React"><img src="https://img.shields.io/badge/React-black?style=flat&logo=Python&logoColor=61DAFB"/></a>
 <a href="https://namu.wiki/w/HTML"><img src="https://img.shields.io/badge/HTML5-black?style=flat&logo=HTML5&logoColor=E34F26"/> </a>
 <a href="https://namu.wiki/w/CSS"><img src="https://img.shields.io/badge/CSS3-black?style=flat&logo=css3&logoColor=1572B6"/></a>
 <a href="https://namu.wiki/w/Spring(%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)"><img src="https://img.shields.io/badge/Spring Boot-black?style=flat&logo=Spring Boot&logoColor=6DB33F"/></a>
