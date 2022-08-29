@@ -38,7 +38,7 @@
 }
 .result-job img{
     width:390px;
-    margin-top: -20px;
+    margin-top: -50px;
 }
 .result-job p{
     font-size: 18px;
@@ -54,6 +54,9 @@
     justify-self: flex-end;
     margin: 10px 0 0 0;
 }
+.explain-job{
+    line-height: 200%;
+}
 .etc{
     display: flex;
     flex-direction: column;
@@ -66,7 +69,7 @@
     display: flex;
 }
 .jobs-supply p{
-    margin: 10px 50px 0 50px;
+    margin: 50px 50px 0 50px;
 }
 .jobs-supply .good{
     width: 200px;
@@ -116,7 +119,11 @@
     border-radius: 7px 7px 7px 7px;
     margin: 10px 0 10px 0;
 }
-
+@media all and (min-width: 769px){
+    .result-job .jobs-supply{
+        display: none;
+    }
+}
 @media all and (max-width: 768px){
 /*모바일*/
     .etc{
@@ -130,7 +137,7 @@
     }
     .result-job{
         width: 90%;
-        order: -1;
+        order: -5;
     }
     .result-job img{
         width: 90%;
@@ -147,5 +154,11 @@
     .survey-result{
         flex-direction: column;
         overflow: scroll;
+    }
+    .etc .jobs-supply{
+        display: none;
+    }
+    .jobs-supply .good, .notgood{
+        margin: -30px 0 10px 0;
     }
 }

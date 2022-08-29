@@ -120,10 +120,10 @@ function Result(props) {
             return '이상주의자 NF형은 자아실현이라는 목표를 위해 진실하게 몰두하는 타입입니다. 언어 능력이 뛰어나 유창하게 말하고 쓰는 능력을 갖춘 경우가 많으며, 주위 사람들에게 영감과 영향을 주는 경향이 있습니다. 다른 사람과의 관계 형성에 에너지를 투자하며, 타인의 행동에 대해 깊게 생각하고, 장점을 잘 찾아내는 편입니다.';
         }
         if(inner === 'SJ'){
-            return '소속감을 중시하는 SJ형은 남에게 도움을 주거나 돌보는 역할을 맡는 것이 어울립니다. 이들은 조직의 규칙을 따르는 것을 좋아하며, 의무감과 책임감이 강한 편입니다. 이 유형들은 급격한 변화를 싫어하고 과거의 경험이나 원칙을 옹호하며, 혁신보다는 점진적 발전을 선호합니다. 자신이 속한 자리에서 본분을 다하는 충실하고 헌신적인 성격의 사람들입니다. '
+            return '소속감을 중시하는 SJ형은 남에게 도움을 주거나 돌보는 역할을 맡는 것이 어울립니다. 이들은 조직의 규칙을 따르는 것을 좋아하며, 의무감과 책임감이 강한 편입니다. 이 유형들은 급격한 변화를 싫어하고 과거의 경험이나 원칙을 옹호하며, 혁신보다는 점진적 발전을 선호합니다.'
         }
         if(inner === 'SP'){
-            return '모험을 즐기고 자유를 좋아하는 SP 유형은 경험을 중시하고 모험을 즐기는 경향이 있습니다. 덕분에 갑작스러운 위기상황에 가장 잘 대처하는 유형이기도 합니다. 새로운 것을 선호하고 낙천적이며 쾌활한 성격이 많고, 창조적인 경향을 지닌 사람들도 있습니다. SP형은 평등하고 관용적인 태도로 타인을 대하는 편입니다.'
+            return '모험을 즐기고 자유를 좋아하는 SP 유형은 경험을 중시하고 모험을 즐기는 경향이 있습니다. 덕분에 갑작스러운 위기상황에 가장 잘 대처하는 유형이기도 합니다. 새로운 것을 선호하고 낙천적이며 쾌활한 성격이 많고, 창조적인 경향을 지닌 사람들도 있습니다.'
         }
     }
     function return_resultPic(inner){
@@ -209,7 +209,20 @@ function Result(props) {
                 <div onClick={()=>window.open("https://www.jobplanet.co.kr/job", '_blank')} className='toBT'><h2>잡플래닛 공고 보러가기</h2></div>
                 <div onClick={()=>window.location.replace("/board") } className='toBT'><h2>게시판 이동하기 </h2></div>
                 <div className='fighting'>결과에 너무 신경쓰지 마세요 ! <br/> 당신의 노력과 열정만 있다면 무엇이든지 해낼수 있어요 !</div>
+                <div className='jobs-supply'>
+                    <div className='good'>
+                        <p>추천 직업</p>
+                        <span>{return_GoodJobs(calculStr())}</span>
+                    </div>
+                    <div className='notgood'>
+                        <p>비추천 직업</p>
+                        <span>{return_NotGoodJobs(calculStr())}</span>
+                    </div>
+                    
+
+                </div>
             </div>
+            
         </div>
     );
     
