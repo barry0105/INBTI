@@ -24,6 +24,6 @@ MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 <a href="https://namu.wiki/w/HTML"><img src="https://img.shields.io/badge/HTML5-black?style=flat&logo=HTML5&logoColor=E34F26"/> </a>
 <a href="https://namu.wiki/w/CSS"><img src="https://img.shields.io/badge/CSS3-black?style=flat&logo=css3&logoColor=1572B6"/></a>
 <a href="https://namu.wiki/w/Spring(%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)"><img src="https://img.shields.io/badge/Spring Boot-black?style=flat&logo=Spring Boot&logoColor=6DB33F"/></a>
-<a href="https://namu.wiki/w/MySQL"><img src="https://img.shields.io/badge/Mysql-black?style=flat&logo=Mysql&logoColor=4479A1"/></a>
+<a href="https://namu.wiki/w/MariaDB"><img src="https://img.shields.io/badge/MariaDB-black?style=flat&logo=Mysql&logoColor=4479A1"/></a>
 
 </div>
