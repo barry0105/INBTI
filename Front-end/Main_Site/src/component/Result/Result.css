@@ -29,7 +29,7 @@
     padding: 10px;
 }
 .result-job{
-    height: 568px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,13 +38,14 @@
 }
 .result-job img{
     width:390px;
+    margin-top: -20px;
 }
 .result-job p{
     font-size: 18px;
     
 }
 .result-job .result-name{
-    margin: 10px 0 0 0;
+    margin: -30px 0 0 0;
 }
 .result-job .explain-job{
     width: 350px;

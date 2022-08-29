@@ -127,17 +127,29 @@ function Result(props) {
         }
     }
     function return_resultPic(inner){
-        if(inner === 'NT'){
-            return '../../../img/result_img/NT.png';
+        if(inner === 'INT'){
+            return '../../../img/result_img/int.png';
         }
-        if(inner === 'NF'){
-            return '../../../img/result_img/NF.png';
+        if(inner === 'INF'){
+            return '../../../img/result_img/inf.png';
         }
-        if(inner === 'SP'){
-            return '../../../img/result_img/SP.png';
+        if(inner === 'ISP'){
+            return '../../../img/result_img/isp.png';
         }
-        if(inner === 'SJ'){
-            return '../../../img/result_img/SJ.png';
+        if(inner === 'ISJ'){
+            return '../../../img/result_img/isj.png';
+        }
+        if(inner === 'ENT'){
+            return '../../../img/result_img/ent.png';
+        }
+        if(inner === 'ENF'){
+            return '../../../img/result_img/enf.png';
+        }
+        if(inner === 'ESP'){
+            return '../../../img/result_img/esp.png';
+        }
+        if(inner === 'ESJ'){
+            return '../../../img/result_img/esj.png';
         }
     }
     const DevScore = (
@@ -170,7 +182,7 @@ function Result(props) {
                 </div>
             </div>
             <div className='result-job'>
-                <img src={return_resultPic(Return_maxScore())}></img>
+                <img src={return_resultPic(calculStr())}></img>
                 <p className='result-name'>성향 : {Return_maxScore()+'형'}</p>
                 <div className='explain-job'>
                     <p>
