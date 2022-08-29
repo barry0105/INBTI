@@ -19,7 +19,6 @@ function Result(props) {
     var [ResultPer,SetResultPer] = useState();
     useEffect(()=>{
         reNewData();
-        console.log("재렌더링 됨");
     },[]);
     function reNewData(){
         const coll = firestore.collection("Result-Type");
@@ -116,7 +115,20 @@ function Result(props) {
             return '모험을 즐기고 자유를 좋아하는 SP 유형은 경험을 중시하고 모험을 즐기는 경향이 있습니다. 덕분에 갑작스러운 위기상황에 가장 잘 대처하는 유형이기도 합니다. 새로운 것을 선호하고 낙천적이며 쾌활한 성격이 많고, 창조적인 경향을 지닌 사람들도 있습니다. SP형은 평등하고 관용적인 태도로 타인을 대하는 편입니다.'
         }
     }
-    
+    function return_resultPic(inner){
+        if(inner === 'NT'){
+            return '../../../img/result_img/NT.png';
+        }
+        if(inner === 'NF'){
+            return '../../../img/result_img/NF.png';
+        }
+        if(inner === 'SP'){
+            return '../../../img/result_img/SP.png';
+        }
+        if(inner === 'SJ'){
+            return '../../../img/result_img/SJ.png';
+        }
+    }
     const DevScore = (
         
         <div className='survey-result'>
@@ -147,7 +159,7 @@ function Result(props) {
                 </div>
             </div>
             <div className='result-job'>
-                <img src='../../img/NoPic.png'></img>
+                <img src={return_resultPic(Return_maxScore())}></img>
                 <p className='result-name'>성향 : {Return_maxScore()+'형'}</p>
                 <div className='explain-job'>
                     <p>
