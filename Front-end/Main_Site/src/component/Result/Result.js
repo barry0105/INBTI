@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Result.css';
 import { Link } from 'react-router-dom';
 import { firestore } from "../../firebase.js";
-import { doc, updateDoc } from "@firebase/firestore";
 function Result(props) {
 
     var DevAll = props.N + props.T + props.F + props.S + props.J + props.P;
@@ -17,8 +16,10 @@ function Result(props) {
     var outSide = Math.ceil(100 / (props.E+props.I) * props.E);
     var inSide = Math.ceil(100 / (props.E+props.I) * props.I);
     var [ResultPer,SetResultPer] = useState();
+    var [allUsers, setAllUsers] = useState();
     useEffect(()=>{
         reNewData();
+        CountUsers();
     },[]);
     function reNewData(){
         const coll = firestore.collection("Result-Type");
@@ -26,6 +27,16 @@ function Result(props) {
             Cgdata(calculStr(),(doc.data()[calculStr()])+1);
             SetResultPer((doc.data()[calculStr()])+1);
         });
+    }
+    function CountUsers(){
+        const coll = firestore.collection("Result-Type");
+        coll.doc("z7LIP4EUhYCqKnjRqYV7").get().then((doc) => {
+            setAllUsers(Object.values(doc.data()).reduce(function add(sum,currValue){
+                return sum + currValue;
+            }, 0)); 
+
+        });
+    
     }
     function Cgdata(tp, num){
         const coll = firestore.collection("Result-Type");
@@ -180,7 +191,7 @@ function Result(props) {
                 </div>
             </div>
             <div className='etc'>
-                <div className='Same'>같은 유형의 사람들이 {ResultPer}명 있어요 !</div>
+                <div className='Same'>전체 {allUsers}명 중 같은 유형의 사람들이 {ResultPer}명 있어요 !</div>
                 <div onClick={()=>window.location.replace("/") } className='toBT'><h2>홈으로</h2></div>
                 <Link to='/Explain' target={"_blank"} style={{textDecoration: 'none'} }><div className='toBT'><h2>전체 유형 보기</h2></div></Link>
                 <div onClick={()=>window.open("https://www.jobplanet.co.kr/job", '_blank')} className='toBT'><h2>잡플래닛 공고 보러가기</h2></div>
