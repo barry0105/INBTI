@@ -21,6 +21,10 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
+
+.Big-explain img{
+    width: 200px;
+}
 .I-explain{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -42,6 +46,12 @@
     margin: 3px 10px 3px 10px;
     background-color: white;
 }
+.explain-I{
+    align-self: center;
+}
+.explain-E{
+    align-self: center;
+}
 .homeBT{
     background-color: #ccc;
     margin: 10px;
@@ -51,4 +61,13 @@
 .homeBT:hover{
     cursor: url('../../../public/img/cursor_click.png') 0 2, auto;
     background-color: #cba;
+}
+
+@media all and (max-width: 768px){
+    .I-explain{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .E-explain{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

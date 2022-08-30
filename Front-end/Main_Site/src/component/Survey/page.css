@@ -75,14 +75,13 @@
         width: 38%;
     }
     .Question h2{
+        display: block;
         position: fixed;
-        top: 51%;
     }
     .Question img{
         position: fixed;
-        top: 5%;
+        top: 1%;
         width: 85%;
-        margin-bottom: 10px;
     }
     .survey-wrap{
         position: fixed;

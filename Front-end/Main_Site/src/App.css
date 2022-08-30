@@ -89,3 +89,10 @@ html, body{
 .warning p{
   color: red;
 }
+
+@media all and (max-width: 768px){
+  .footer{
+    visibility: hidden;
+    
+  }
+}

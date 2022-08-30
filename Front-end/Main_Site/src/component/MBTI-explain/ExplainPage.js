@@ -45,6 +45,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-INT'>
                     INT 유형
+                    <img src='../../img/result_img/int.png'></img>
                     <div className='explain'>
                         <p>추천 직업</p>
                         <span className='good-jobs'>연구원, 시스템 개발 전문가, 컴퓨터 보안 전문가, 소프트웨어 엔지니어, 프로그래머, 빅데이터 분석가</span>
@@ -54,6 +55,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-INF'>
                     INF 유형
+                    <img src='../../img/result_img/inf.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>연구원, 개발자, 마케팅 담당자, 프로젝트 관리자, 프리랜서</span>
@@ -63,6 +65,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ISJ'>
                     ISJ 유형
+                    <img src='../../img/result_img/isj.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>공무원, 군인, 교사</span>
@@ -72,6 +75,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ISP'>
                     ISP 유형
+                    <img src='../../img/result_img/isp.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>소프트웨어 개발자, 연구원, 네트워크 관리자, 빅데이터 분석가</span>
@@ -90,6 +94,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ENT'>
                     ENT 유형
+                    <img src='../../img/result_img/ent.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>관리자, 발명가, 사업가</span>
@@ -99,6 +104,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ENF'>
                     ENF 유형
+                    <img src='../../img/result_img/enf.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>사업가, 정치인, 기획자</span>
@@ -108,6 +114,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ESJ'>
                     ESJ 유형
+                    <img src='../../img/result_img/esj.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>관리자, 군인, 공무원</span>
@@ -117,6 +124,7 @@ function ExplainPage(props) {
                 </div>
                 <div className='explain-ESP'>
                     ESP 유형
+                    <img src='../../img/result_img/esp.png'></img>
                     <div className='explain'>
                     <p>추천 직업</p>
                         <span className='good-jobs'>빅데이터 전문가, 기업가, 군인, 경찰, 소방관</span>
