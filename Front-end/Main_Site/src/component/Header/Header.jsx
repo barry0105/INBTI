@@ -115,7 +115,9 @@ function Header(props) {
                         <StyledLink to="/"><Navli>홈</Navli></StyledLink>
                         <StyledLink to='/ToBoard'><Navli>게시판</Navli></StyledLink>
                         <StyledLink to='/ToSurvey'><Navli>성향검사</Navli></StyledLink>
+                        <StyledLink to='/Explain' target={"_blank"}><Navli>유형설명</Navli></StyledLink>
                         <StyledLink to='/info'><Navli>정보</Navli></StyledLink>
+                        
                         {!menubar&&<MenuButton icon={faBars} onClick={()=>{visiblemenubar(true)}}/>}
                 </Navul>
             </Navwrap>
