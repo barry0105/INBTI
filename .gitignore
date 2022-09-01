@@ -64,3 +64,21 @@ node_modules/
 
 # dotenv environment variables file
 .env
+*.gradle
+*.gradle
+Back-end/build.gradle
+Back-end/gradlew.bat
+Back-end/build.gradle
+Back-end/gradlew.bat
+Back-end/.classpath
+Back-end/.project
+*.prefs
+*.json
+*.MF
+*.bin
+*.idx
+*.bat
+Back-end/java-getting-started/
+*.bat
+*.jar
+*.gradle

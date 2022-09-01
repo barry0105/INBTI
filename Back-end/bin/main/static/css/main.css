@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+body{
+  background-color: rgb(249, 249, 249);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#top-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.nav{
+  background-color: rgb(252, 239, 234);
+  width: 100%;
+  height: 30%;
+}
+
+.logo{
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+#body-wrapper{
+  width: 100%;
+}
+
+.board_logo{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.buttons{
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: 0.25s;
+
+}
+
+button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.custom-btn{
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btns {
+  background-color: #f199bc;
+  color: #fff;
+}
+
+.btns {
+  border: 3px solid #f199bc;
+  color: #fff;
+}
+
+.btns:hover {
+  color: #fff;
+  background: #f199bc;
+  transform: scale(1.4);
+  cursor: pointer;
+}
