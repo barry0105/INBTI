@@ -28,6 +28,10 @@ const FooterWrap = styled.footer`
     flex: 0.27;
     text-align: left;
     background-color: RGB(249,169,120);
+
+    @media all and (max-width: 768px){
+        visibility: hidden;
+    }
 `;
 const LogoOnFooter = styled.div`
     display: flex;  

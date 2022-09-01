@@ -32,24 +32,3 @@ body::-webkit-scrollbar{
   margin: 0;
   padding: 0;
 }
-.NotFound{
-  font-family: Arial;
-  position: relative;
-  top: 100px;
-  text-align: center;
-  color: red;
-  font-size: 4rem;
-}
-.NotFound-wrap{
-  align-items: flex-start;
-  justify-content: center;
-  display: flex;
-  flex: 1;
-}
-
-@media all and (max-width: 768px){
-  .footer{
-    visibility: hidden;
-    
-  }
-}
