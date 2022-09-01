@@ -1,0 +1,17 @@
+.title{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 239, 234);
+  padding-left: 30px;
+}
+
+.logo{
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+.container{
+  width: 100%;
+  height: 400px;
+}

@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.board.inbti.dto.board.BoardRequestDto;
 import com.board.inbti.service.BoardService;
@@ -16,7 +18,12 @@ public class BoardController {
 	
 	private final BoardService boardService;
 	
-	@GetMapping("/board/list")
+//	@RequestMapping(value="/", method=RequestMethod.GET)
+//	public String index() {
+//		return "index";
+//	}
+	
+	@GetMapping("board/list")
 	public String getBoardListPage(Model model
 			, @RequestParam(required = false, defaultValue = "0") Integer page
 			, @RequestParam(required = false, defaultValue = "5") Integer size) throws Exception {
@@ -27,15 +34,15 @@ public class BoardController {
 			throw new Exception(e.getMessage()); 
 		}
 		
-		return "/board/list";
+		return "board/list";
 	}
 	
-	@GetMapping("/board/write")
+	@GetMapping("board/write")
 	public String getBoardWritePage(Model model, BoardRequestDto boardRequestDto) {
-		return "/board/write";
+		return "board/write";
 	}
 	
-	@GetMapping("/board/view")
+	@GetMapping("board/view")
 	public String getBoardViewPage(Model model, BoardRequestDto boardRequestDto) throws Exception {
 		
 		try {
@@ -46,10 +53,10 @@ public class BoardController {
 			throw new Exception(e.getMessage()); 
 		}
 		
-		return "/board/view";
+		return "board/view";
 	}
 	
-	@PostMapping("/board/write/action")
+	@PostMapping("board/write/action")
 	public String boardWriteAction(Model model, BoardRequestDto boardRequestDto) throws Exception {
 		
 		try {
@@ -65,7 +72,7 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	@PostMapping("/board/view/action")
+	@PostMapping("board/view/action")
 	public String boardViewAction(Model model, BoardRequestDto boardRequestDto) throws Exception {
 		
 		try {
@@ -81,7 +88,7 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	@PostMapping("/board/view/delete")
+	@PostMapping("board/view/delete")
 	public String boardViewDeleteAction(Model model, @RequestParam() Long id) throws Exception {
 		
 		try {
@@ -93,7 +100,7 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	@PostMapping("/board/delete")
+	@PostMapping("board/delete")
 	public String boardDeleteAction(Model model, @RequestParam() Long[] deleteId) throws Exception {
 		
 		try {
