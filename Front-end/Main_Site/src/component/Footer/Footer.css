@@ -1,14 +1,21 @@
 .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    flex: 0.27;
+    text-align: left;
+    background-color: RGB(249,169,120);
 }
 .footerOnLogo img{
     width: auto;
     height: auto;
 }
 .footerOnLogo{
-    display: flex;
+    display: flex;  
     width: fit-content;
     text-align: left;
     font-size: 1vw;
