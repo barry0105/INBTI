@@ -199,7 +199,7 @@ function Result(props) {
                         <span>{return_NotGoodJobs(calculStr())}</span>
                     </div>
                     
-
+        
                 </div>
             </div>
             <div className='etc'>
