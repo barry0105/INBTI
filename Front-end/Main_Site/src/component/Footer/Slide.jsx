@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination,Autoplay } from "swiper/core"; 
+import styled from 'styled-components';
 function Slide(props) {
     return (
-        <div className='swipe'>
+        <SwipeWrap>
             <Swiper
             style={{
                 width: "1000px",
@@ -43,8 +43,20 @@ function Slide(props) {
                 <SwiperSlide>원래 발등은 믿는 도끼가 찍는다.</SwiperSlide>
                 <SwiperSlide>지금 놀면 평생 논다.</SwiperSlide>
             </Swiper>
-    </div>
+        </SwipeWrap>
     );
 }
-
+const SwipeWrap = styled.div`
+    display: flex;
+    font-size: 3vw;
+    color: brown;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    width: 100%;
+    .swiper-pagination{
+        display:none
+    }
+`;
 export default Slide;

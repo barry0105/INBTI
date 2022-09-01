@@ -151,7 +151,7 @@ const Navul = styled.ul`
     @media all and (max-width: 768px){
         height: 50%;
         justify-content: center;
-        margin-left: -10px;
+        margin-left: -20px;
     }
 `;
 const Navli = styled.li`
@@ -164,7 +164,8 @@ const Navli = styled.li`
     }
     @media all and (max-width: 768px){
         font-size: 4vw;
-        margin: 0 10px 0 10px;
+        padding: 10px;
+        margin-bottom: 20px;
     }
 `;
 const Navwrap = styled.nav`
@@ -173,7 +174,7 @@ const Navwrap = styled.nav`
         z-index: 1;
     }
     @media all and (max-width: 768px){
-        height: 10%;
+        height: 15%;
         display:flex;
         align-items:flex-end;
         justify-content: center;
@@ -190,6 +191,7 @@ const MenuButton = styled(FontAwesomeIcon)`
     @media all and (max-width: 768px){
         font-size: 5vw;
         right: 4%;
+        top:9%;
     }
 `;
 /* Header Styled */

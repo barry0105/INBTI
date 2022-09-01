@@ -48,7 +48,7 @@ const MiddleSection = styled.section`
     height: 130%;
     background-image: url('/img/bg.jpg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:240vh;
     background-color: #ff3300;
     @media all and (max-width: 768px){
         background-size: 200vh;
