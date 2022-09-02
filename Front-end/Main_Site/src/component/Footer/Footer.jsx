@@ -8,10 +8,10 @@ function Footer(props) {
         location.pathname !=='/Survey' && location.pathname !== '/Explain' &&
         <FooterWrap>
            <LogoOnFooter><img src="/img/title.png"/>
-                <div className='footer-Banner'>
+                <FooterBanner>
                 <h2>INBTI - 인생에 도움을 주는 명언들</h2>
                 {<Slide/>}
-                </div>
+                </FooterBanner>
            </LogoOnFooter>
            
         </FooterWrap>

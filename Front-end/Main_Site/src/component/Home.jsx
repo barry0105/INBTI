@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { firestore } from "../firebase.js";
+import { Link } from 'react-router-dom';
 function Home(props) {
     useEffect(()=>{
         getTime();
@@ -39,13 +40,14 @@ function Home(props) {
         <MiddleSection>
             <MidText>첫 취업 제대로 알고 하자 ! <br/>인마고 취업 도우미 !</MidText>
             <Scrollimg/>
-            <ConnectedPeople>현재까지 {TotalUsers}명의 사람들이 사이트를 이용했어요 ! <br/> Today : {TodayUsers}</ConnectedPeople>
+            <ConnectedPeople>현재까지 {TotalUsers}명의 사람들이 INBTI를 이용했어요 ! <br/> Today : {TodayUsers}</ConnectedPeople>
+            <ToSurveyButton onClick={()=>{window.location.replace("/Survey")}}>성향검사 받기</ToSurveyButton>
         </MiddleSection>
     );
 }
 const MiddleSection = styled.section`
     width: 100%;
-    height: 130%;
+    height: 140%;
     background-image: url('/img/bg.jpg');
     background-repeat: no-repeat;
     background-size:240vh;
@@ -85,5 +87,22 @@ line-height: 200%;
    width: 80%;
    top: 110%;
 }
+`;
+const ToSurveyButton = styled.button`
+    position: absolute;
+    border: 0;
+    font-size: 2vw;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px 30px 30px 30px;
+    top: 123%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15vw;
+    background-color: blue;
+    color:white;
+    &:hover{
+        cursor: pointer;
+        background-color: darkblue;
+    }
 `;
 export default Home;
