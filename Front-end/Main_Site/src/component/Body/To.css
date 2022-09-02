@@ -21,19 +21,3 @@
 .middle-board .Text{
     font-size: 2vw;
 }
-.info{
-    display: flex;
-    flex: 1;
-    background-color:rgb(187,223,219);
-    justify-content: center;
-    align-items: center;
-}
-.info ul li{
-    list-style: none;
-    line-height: 300%;
-}
-.info ul li table{
-    line-height: 200%;
-    border-collapse: collapse;
-    text-align: center;
-}
