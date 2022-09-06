@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-content: space-between;
     position: relative;
-    margin:15px;
+    padding: 10px;
     width: 100%;
 }
 .out-Box{
@@ -37,8 +37,8 @@
     padding: 10px;
 }
 .result-job img{
-    width:390px;
-    margin-top: -50px;
+    width:370px;
+    margin-top: -30px;
 }
 .result-job p{
     font-size: 18px;
@@ -61,7 +61,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 400px;
+    width: fit-content;
+    margin-right: 20px;
 }
 
 .jobs-supply{
@@ -101,7 +102,7 @@
     border-radius: 10px 10px 10px 10px;
 }
 .toBT h2:hover{
-    cursor: url('../../../public/img/cursor_click.png'), auto;
+    cursor: pointer;
     background-color: lightgray;
 }
 .fighting{
