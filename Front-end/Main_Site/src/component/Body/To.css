@@ -13,7 +13,7 @@
     padding: 30px;
 }
 .middle-board img:hover{
-    cursor: url('../../../public/img/cursor_click.png') 0 3, auto;
+    cursor: pointer;
 }
 .middle-board .survey{
     width: 14vw;
