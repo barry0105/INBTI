@@ -30,5 +30,5 @@ MDP Proejct - 인천전자마이스터고 취업 도우미<br>
 </div>
 
 <hr>
-<h3>Link<h3>
+<h3>Link 🔗<h3>
 https://inbti-409ab.web.app/
