@@ -5,18 +5,15 @@ import { Link } from 'react-router-dom';
 function Home(props) {
     useEffect(()=>{
         getTime();
-        countUsers(CurrentHours,CurrentMin);
+        
     },[]);
-    var [CurrentHours, SetTime] = useState(0);
-    var [CurrentMin, SetMinTime] = useState(0);
     var [TotalUsers, SetTotalUser] = useState(0);
     var [TodayUsers, SetTodayUser] = useState(0);
     function getTime(){
         let today = new Date();   
         let hours = today.getHours();
         let min = today.getMinutes();
-        SetTime(hours);
-        SetMinTime(min);
+        countUsers(hours, min);
     }
     function updateUsers(name, num){
         const coll = firestore.collection("Howmany");
@@ -32,8 +29,9 @@ function Home(props) {
             else{
                 updateUsers('Today',doc.data()['Today']+1);
             }
-            SetTotalUser(doc.data()['Total']);
             SetTodayUser(doc.data()['Today']);
+            SetTotalUser(doc.data()['Total']);
+            
         });
     }
     return (
