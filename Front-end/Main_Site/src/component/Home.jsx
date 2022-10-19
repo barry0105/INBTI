@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Home(props) {
     useEffect(()=>{
         getTime();
-        /*개발중 주석 해제 금지 countUsers(CurrentHours,CurrentMin);*/
+        countUsers(CurrentHours,CurrentMin);
     },[]);
     var [CurrentHours, SetTime] = useState(0);
     var [CurrentMin, SetMinTime] = useState(0);
