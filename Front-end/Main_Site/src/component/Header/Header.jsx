@@ -17,7 +17,7 @@ function Header(props) {
             <ExitMenu onClick={()=>{visiblemenubar(false)}}>X</ExitMenu>
             <MenuList>
                 <MenuUnit onClick={()=> {visiblehelpPopup(true)}}>도움말</MenuUnit>
-                <MenuUnit onClick={()=> {visiblesetting(true)}}>설정</MenuUnit>
+                {/* <MenuUnit onClick={()=> {visiblesetting(true)}}>설정</MenuUnit> */}
                 <MenuUnit onClick={()=> window.open('http://intec.icehs.kr/main.do', '_blank')}>학교 홈페이지</MenuUnit>
                 <MenuUnit onClick={()=> window.open('https://github.com/barry0105/INBTI','_blank')}>Github</MenuUnit>
                 <MenuUnit onClick={()=>window.open('https://season-bacon-1ce.notion.site/8aa9318171f34aca85e80faea98f4001?v=3c78b9af3f6c42e0ac0e6c5c9263a6f5', '_blank')}>Notion</MenuUnit>
@@ -56,34 +56,26 @@ function Header(props) {
     )
     const boardHelp = (
         <>
-        친구는 세월의 도둑이다.
-        봄부터 흐르는 물은 겨울이 되어도 얼지 않듯이
-        불행했을 때 만난 친구는 가장 소중히 여겨야 한다.
-        행복했을 때 함께 기쁨을 누리는 친구보다
-        힘들 떄 슬픔을 덜어지는 친구를 더 많이 신뢰할 수 있다.
-        부유했을 때는 친구를 사귀기 쉽지만,
-        어려울 때는 눈을 씻고 찾아봐도 친구를 찾기 어렵다.
-        누군가 진정한 우정을 나누고 있다 할지라도 그 우정을 지키려면 오랜 시간이 걸린다.
-        그들은 진정한 친구가 아니기 때문이다.
-        친구란 말하자면 또 하나의 자신이다.
-        친구를 보면 그 사람을 알 수 있다.
-        현명한 사람과 어리석은 사람은 서로 어울리지 않는다.
-        친구는 나를 동정하는 자가 아니라 나를 돕는 자다.
+        <br/>
+        게시판은 진로에 관한 고민이나 기타 고민사항, 설문 결과에 대한 궁금점 등을 사람들과 이야기 해 볼 수 있게 만든 서비스입니다.
+        <br/>
+        <br/>
+        게시판은 메인화면 상단 게시판 탭을 누른 뒤 사진을 눌러서 접속할 수 있습니다.
+        <br/>
+        <br/>
+        게시판에 자신의 이야기를 올리고 댓글로 사람들과 소통해보세요 !
         </>
     );
     const surveyHelp = (
         <>
-        용서는 곧 사랑이다.
-        고결하고 아름다운 사랑의 형태이다.
-        사랑이 없는 사람은 쉽게 용서하지 못한다.
-        용서는 평화와 행복을 그 보답으로 준다.
-        그대, 용서함으로써 행복 하라!
-        용감한 자만이 용서할 줄 알고
-        비겁한 자는 용서하지 않는다.
-        용서는 남에게는 자주 베풀지만
-        자신에게는 베풀지 마라.      
-        누군가가 당신에게 피해를 입혔다면
-        인내심을 가지고 그들을 대하라.</>
+        <br/>
+        INBTI 성향검사는 학생들에게 간단한 설문 조사를 통해 자신의 직업 성향을 알 수 있게 도와주는 서비스 입니다.
+        <br/>
+        <br/>
+        자신의 직업 성향을 찾음으로서 본인에게 맞는 직무를 선택하고 더 합리적이게 행복한 미래를 결정할 기회를 제공 해줄 수 있습니다.
+        <br/>
+        <br/>
+        성향검사는 메인화면 하단 성향검사 받기 버튼을 눌러 참여하고 결과를 확인할 수 있습니다.</>
     );
     const popupHelp = (
         <BackgroundOfPopup>
@@ -267,7 +259,7 @@ const HelpValue = styled.p`
     height: 80%;
     display: flex;
     flex: 1;
-    text-align: center;
+    text-align: left;
     width: 100%;
     overflow-y: auto;
 `;
