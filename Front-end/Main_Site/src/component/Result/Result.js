@@ -207,7 +207,7 @@ function Result(props) {
                 <div onClick={()=>window.location.replace("/") } className='toBT'><h2>홈으로</h2></div>
                 <Link to='/Explain' target={"_blank"} style={{textDecoration: 'none'} }><div className='toBT'><h2>전체 유형 보기</h2></div></Link>
                 <div onClick={()=>window.open("https://www.jobplanet.co.kr/job", '_blank')} className='toBT'><h2>잡플래닛 공고 보러가기</h2></div>
-                <div onClick={()=>window.location.replace("/board") } className='toBT'><h2>게시판 이동하기 </h2></div>
+                <div onClick={()=>window.open("https://inbtiboard.herokuapp.com/") } className='toBT'><h2>게시판 이동하기 </h2></div>
                 <div className='fighting'>결과에 너무 신경쓰지 마세요 ! <br/> 당신의 노력과 열정만 있다면 무엇이든지 해낼수 있어요 !</div>
                 <div className='jobs-supply'>
                     <div className='good'>
