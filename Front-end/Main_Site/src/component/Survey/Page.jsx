@@ -134,10 +134,10 @@ function Page1(props) {
             'Values' : ['F','T']
         },{
             'id' : 16,
-            'Question' : '친구가 해어졌다고 말한다. 내 반응은?',
+            'Question' : '친구가 헤어졌다고 말한다. 내 반응은?',
             'image' : '../../../img/survey_img/01.png',
             'Answer' : ['걔가 연락은 받아? 괜찮냐?',
-                        '해어질 줄 알았다. ...그래서 누가 찼냐?'],
+                        '헤어질 줄 알았다. ...그래서 누가 찼냐?'],
             'Values' : ['F','T']
         },{
             'id' : 17,
@@ -157,7 +157,7 @@ function Page1(props) {
             'Question' : '요리를 할때 나는?',
             'image' : '../../../img/survey_img/01.png',
             'Answer' : ['요리의 기본은 레시피! 철저하게 정량을 지켜서 요리한다.',
-                        '양? 굳이 재야하나? 감에따라 눈대중,손대중으로 한다.'],
+                        '양? 굳이 재야하나? 감에 따라 눈대중,손대중으로 한다.'],
             'Values' : ['S','N']
         },{
             'id' : 20,
@@ -421,9 +421,9 @@ const QuestionUnit = styled.div`
         border-radius: 7px 7px 7px 7px;
     }
     @media all and (max-width: 768px){
-        width: 50vw;
+        width: auto;
         margin: 5vw;
-        font-size: 200%;
+        font-size: 100%;
     }
 `;
 const HomeButton = styled.h1`

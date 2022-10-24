@@ -102,5 +102,11 @@ const ToSurveyButton = styled.button`
         cursor: pointer;
         background-color: darkblue;
     }
+    @media all and (max-width: 768px){
+        width: 50%;
+        height 15%;
+        top: 130%;
+        font-size: 5vw;
+    }
 `;
 export default Home;
