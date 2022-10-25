@@ -421,7 +421,7 @@ const QuestionUnit = styled.div`
         border-radius: 7px 7px 7px 7px;
     }
     @media all and (max-width: 768px){
-        width: auto;
+        width: 90%;
         margin: 5vw;
         font-size: 100%;
     }
